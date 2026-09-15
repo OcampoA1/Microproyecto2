@@ -7835,7 +7835,7 @@ a.anchor-link {
 <li><strong>Aprendizaje supervisado:</strong> comparación controlada entre regresión logística y máquinas de soporte vectorial lineales para predecir la etiqueta ODS.</li>
 </ul>
 <blockquote>
-<p><strong>Articulación con la asignatura:</strong> LSA constituye el componente no supervisado central, pues descubre estructuras semánticas sin utilizar las etiquetas. La clasificación posterior es necesariamente supervisada porque el enunciado solicita aprender la relación entre cada texto y su ODS conocido.</p>
+<p><strong>Nota metodológica:</strong> LSA constituye el componente no supervisado central, pues descubre estructuras semánticas sin utilizar las etiquetas. La clasificación posterior es supervisada porque el enunciado solicita aprender la relación entre cada texto y su ODS conocido.</p>
 </blockquote>
 <p>Todas las decisiones se validan dentro de un pipeline y el conjunto de prueba permanece aislado hasta la evaluación final. El clasificador seleccionado se calibra para producir probabilidades interpretables y se exporta completo para una aplicación Streamlit.</p>
 <blockquote>
@@ -8001,7 +8001,7 @@ joblib: 1.5.3
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="3.-Carga-y-comprensi%C3%B3n-de-los-datos">3. Carga y comprensión de los datos<a class="anchor-link" href="#3.-Carga-y-comprensi%C3%B3n-de-los-datos">¶</a></h2><p>El archivo se carga mediante una ruta relativa para mantener la portabilidad. Antes de modelar se validan el esquema, los tipos, los valores faltantes, los duplicados y el dominio de la variable objetivo.</p>
-<p>Como estudiantes de maestría, consideramos que esta auditoría no es solo una formalidad técnica: la traducción automática y la aumentación reportadas en el enunciado pueden introducir expresiones menos naturales o patrones repetitivos. Por ello, los resultados deben entenderse como desempeño sobre este corpus y no como garantía inmediata de generalización a cualquier texto ciudadano.</p>
+<p>Esta auditoría es relevante porque la traducción automática y la aumentación reportadas en el enunciado pueden introducir expresiones poco naturales o patrones repetitivos. Por ello, los resultados describen el desempeño sobre este corpus y no garantizan el mismo comportamiento ante cualquier texto ciudadano.</p>
 </div>
 </div>
 </div>
@@ -8961,7 +8961,7 @@ Varianza explicada acumulada (15 componentes): 3.84%
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Interpretaci%C3%B3n-cualitativa-frente-a-los-ODS">Interpretación cualitativa frente a los ODS<a class="anchor-link" href="#Interpretaci%C3%B3n-cualitativa-frente-a-los-ODS">¶</a></h3><p>La interpretación se basa en conjuntos de términos, no en palabras aisladas. Los solapamientos son esperables porque muchos problemas de desarrollo sostenible son transversales; por ejemplo, pobreza, género, educación y empleo aparecen relacionados.</p>
-<p>Los 15 componentes explican 3.84% de la varianza, un valor bajo en términos absolutos pero esperable en una matriz textual dispersa con 15,838 términos. En este escenario no evaluamos LSA únicamente por varianza acumulada: privilegiamos la coherencia semántica de los términos y su capacidad para revelar ejes interpretables. Ocho componentes presentan asociaciones plausibles con los ODS, mientras que los cruces entre objetivos muestran que LSA descubre temas latentes y no reproduce mecánicamente las etiquetas.</p>
+<p>Los 15 componentes explican 3.84% de la varianza, un valor bajo en términos absolutos pero esperable en una matriz textual dispersa con 15,838 términos. Por esta razón, LSA no se evalúa únicamente por la varianza acumulada, sino también por la coherencia semántica de los términos y la presencia de ejes interpretables. Ocho componentes presentan asociaciones plausibles con los ODS, mientras que los cruces entre objetivos muestran que el método descubre temas latentes y no reproduce mecánicamente las etiquetas.</p>
 </div>
 </div>
 </div>
@@ -9895,7 +9895,7 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="An%C3%A1lisis-de-errores-por-clase">Análisis de errores por clase<a class="anchor-link" href="#An%C3%A1lisis-de-errores-por-clase">¶</a></h3><p>El recall permite identificar qué ODS pierde más ejemplos verdaderos; la precisión muestra cuáles reciben más falsos positivos. La siguiente tabla se ordena por F1 para dirigir la inspección hacia las clases más difíciles.</p>
-<p>El accuracy de 0.882 supera al F1 macro de 0.853 y al balanced accuracy de 0.854. Esta diferencia es coherente con el desbalance moderado: el desempeño global es alto, pero no homogéneo entre ODS. En particular, los ODS 8, 10 y 9 presentan los menores F1; su vocabulario se cruza con empleo, desigualdad, industria y desarrollo económico. Desde una lectura aplicada, estos casos deberían priorizarse para revisión humana o para ampliar el corpus con ejemplos más discriminantes.</p>
+<p>El accuracy de 0.882 supera al F1 macro de 0.853 y al balanced accuracy de 0.854. Esta diferencia es coherente con el desbalance moderado: el desempeño global es alto, pero no homogéneo entre ODS. En particular, los ODS 8, 10 y 9 presentan los menores F1; su vocabulario se cruza con empleo, desigualdad, industria y desarrollo económico. En una aplicación real, estos casos deberían priorizarse para revisión humana o para ampliar el corpus con ejemplos más discriminantes.</p>
 </div>
 </div>
 </div>
@@ -10293,105 +10293,27 @@ Verificación: etiquetas y probabilidades son idénticas después de recargar.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=056be51b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ec44a2fa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="11.-Conclusiones-y-limitaciones">11. Conclusiones y limitaciones<a class="anchor-link" href="#11.-Conclusiones-y-limitaciones">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=97a1914e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">best_components</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s2">"svd__n_components"</span><span class="p">]</span>
-<span class="n">best_c</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s2">"classifier__C"</span><span class="p">]</span>
-<span class="n">best_weight</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s2">"classifier__class_weight"</span><span class="p">]</span>
-<span class="n">best_scaler</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s2">"scaler"</span><span class="p">])</span><span class="o">.</span><span class="vm">__name__</span>
-<span class="n">best_classifier</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">[</span><span class="s2">"classifier"</span><span class="p">])</span><span class="o">.</span><span class="vm">__name__</span>
-
-<span class="n">family_scores</span> <span class="o">=</span> <span class="n">best_by_family</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">"modelo"</span><span class="p">)[</span><span class="s2">"F1_macro_validación"</span><span class="p">]</span>
-<span class="n">svc_cv</span> <span class="o">=</span> <span class="n">family_scores</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"LinearSVC"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
-<span class="n">lr_cv</span> <span class="o">=</span> <span class="n">family_scores</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"LogisticRegression"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
-
-<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">f</span><span class="s1">'''</span>
-<span class="s1">### Conclusiones</span>
-
-<span class="s1">1. Bajo un protocolo idéntico, el mejor LinearSVC obtuvo F1 macro de validación **</span><span class="si">{</span><span class="n">svc_cv</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">**, frente a **</span><span class="si">{</span><span class="n">lr_cv</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">** de la mejor regresión logística. La diferencia es pequeña, pero LinearSVC también presentó una brecha entrenamiento–validación menor en su configuración ganadora.</span>
-<span class="s1">2. La búsqueda seleccionó **</span><span class="si">{</span><span class="n">best_classifier</span><span class="si">}</span><span class="s1">**, **</span><span class="si">{</span><span class="n">best_scaler</span><span class="si">}</span><span class="s1">**, **</span><span class="si">{</span><span class="n">best_components</span><span class="si">}</span><span class="s1"> componentes SVD**, `C=</span><span class="si">{</span><span class="n">best_c</span><span class="si">}</span><span class="s1">` y `class_weight=</span><span class="si">{</span><span class="n">best_weight</span><span class="si">}</span><span class="s1">`.</span>
-<span class="s1">3. Después de calibración sigmoidal, el modelo alcanzó accuracy de **</span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">'Accuracy'</span><span class="p">]</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">**, balanced accuracy de **</span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">'Balanced accuracy'</span><span class="p">]</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">** y F1 macro de **</span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">'F1 macro'</span><span class="p">]</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">** sobre </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="si">:</span><span class="s1">,</span><span class="si">}</span><span class="s1"> textos nunca utilizados en el aprendizaje.</span>
-<span class="s1">4. La diferencia entre accuracy y F1 macro confirma que el buen desempeño agregado no es uniforme: los ODS 8, 10 y 9 siguen siendo los retos principales y requieren revisión humana en aplicaciones de alto impacto.</span>
-<span class="s1">5. LSA recuperó estructuras coherentes con educación, género, derechos, salud, agua, energía, clima y producción/consumo. Los solapamientos confirman la naturaleza transversal de los ODS.</span>
-<span class="s1">6. La calibración permite que Streamlit muestre probabilidades estimadas; estas expresan incertidumbre del modelo, no certeza causal.</span>
-
-<span class="s1">### Limitaciones y uso responsable</span>
-
-<span class="s1">- **ODS 17 no soportado:** no existen ejemplos etiquetados de esta clase.</span>
-<span class="s1">- **Clasificación monoclase:** un texto real puede relacionarse con varios ODS.</span>
-<span class="s1">- **Dominio y traducción:** textos ciudadanos breves o regionalismos pueden diferir del corpus traducido/aumentado.</span>
-<span class="s1">- **Clases relacionadas:** pobreza, género, educación y empleo comparten vocabulario y generan confusiones razonables.</span>
-<span class="s1">- **Apoyo a la decisión:** las predicciones deben complementar, no sustituir, la revisión de especialistas.</span>
-<span class="s1">'''</span><span class="p">))</span>
-</pre></div>
+<h2 id="11.-Conclusiones">11. Conclusiones<a class="anchor-link" href="#11.-Conclusiones">¶</a></h2><p>La representación TF-IDF combinada con SVD permitió reducir un vocabulario de 15.838 términos a un espacio compacto para la clasificación. La búsqueda de hiperparámetros seleccionó LinearSVC con 300 componentes, estandarización, <code>C=0.001</code> y ponderación balanceada. Su F1 macro de validación fue 0.846, frente a 0.844 para regresión logística; la diferencia es pequeña, por lo que la elección se sustenta en el protocolo común de evaluación y no en una superioridad amplia entre los dos algoritmos.</p>
+<p>Sobre los 1.932 textos reservados para prueba, el modelo calibrado alcanzó accuracy de 0.882, balanced accuracy de 0.854 y F1 macro de 0.853. La diferencia entre accuracy y F1 macro indica que el desempeño no es uniforme en todas las clases. Los resultados más bajos corresponden a los ODS 8, 10 y 9, cuyos textos comparten vocabulario relacionado con empleo, desigualdad, industria y desarrollo económico.</p>
+<p>El análisis LSA con 15 componentes identificó estructuras asociadas con educación, género, derechos, salud, agua, energía, clima y producción. Aunque la varianza explicada acumulada fue 3.84%, los términos principales formaron tópicos interpretables. Esto muestra que, en matrices textuales dispersas, la coherencia semántica también debe considerarse al evaluar el modelo de tópicos.</p>
+<p>El alcance del clasificador está condicionado por los datos disponibles: el ODS 17 no aparece en el corpus y, por tanto, no puede ser predicho. Además, el modelo asigna una sola etiqueta, aun cuando un texto real podría relacionarse con varios ODS. Estas condiciones deben tenerse presentes al interpretar las predicciones de la aplicación.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
-<h3 id="Conclusiones">Conclusiones<a class="anchor-link" href="#Conclusiones">¶</a></h3><ol>
-<li>Bajo un protocolo idéntico, el mejor LinearSVC obtuvo F1 macro de validación <strong>0.846</strong>, frente a <strong>0.844</strong> de la mejor regresión logística. La diferencia es pequeña, pero LinearSVC también presentó una brecha entrenamiento–validación menor en su configuración ganadora.</li>
-<li>La búsqueda seleccionó <strong>LinearSVC</strong>, <strong>StandardScaler</strong>, <strong>300 componentes SVD</strong>, <code>C=0.001</code> y <code>class_weight=balanced</code>.</li>
-<li>Después de calibración sigmoidal, el modelo alcanzó accuracy de <strong>0.882</strong>, balanced accuracy de <strong>0.854</strong> y F1 macro de <strong>0.853</strong> sobre 1,932 textos nunca utilizados en el aprendizaje.</li>
-<li>La diferencia entre accuracy y F1 macro confirma que el buen desempeño agregado no es uniforme: los ODS 8, 10 y 9 siguen siendo los retos principales y requieren revisión humana en aplicaciones de alto impacto.</li>
-<li>LSA recuperó estructuras coherentes con educación, género, derechos, salud, agua, energía, clima y producción/consumo. Los solapamientos confirman la naturaleza transversal de los ODS.</li>
-<li>La calibración permite que Streamlit muestre probabilidades estimadas; estas expresan incertidumbre del modelo, no certeza causal.</li>
-</ol>
-<h3 id="Limitaciones-y-uso-responsable">Limitaciones y uso responsable<a class="anchor-link" href="#Limitaciones-y-uso-responsable">¶</a></h3><ul>
-<li><strong>ODS 17 no soportado:</strong> no existen ejemplos etiquetados de esta clase.</li>
-<li><strong>Clasificación monoclase:</strong> un texto real puede relacionarse con varios ODS.</li>
-<li><strong>Dominio y traducción:</strong> textos ciudadanos breves o regionalismos pueden diferir del corpus traducido/aumentado.</li>
-<li><strong>Clases relacionadas:</strong> pobreza, género, educación y empleo comparten vocabulario y generan confusiones razonables.</li>
-<li><strong>Apoyo a la decisión:</strong> las predicciones deben complementar, no sustituir, la revisión de especialistas.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ee694ea9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a466bf5c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="12.-Lista-de-verificaci%C3%B3n-de-la-entrega">12. Lista de verificación de la entrega<a class="anchor-link" href="#12.-Lista-de-verificaci%C3%B3n-de-la-entrega">¶</a></h2><ul>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Preparación mediante bolsa de palabras y TF-IDF.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Pipeline reproducible sin fuga de información.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Reducción de dimensionalidad mediante SVD truncado.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>LSA con 15 componentes y términos principales.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Interpretación cualitativa de ocho tópicos frente a los ODS.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Comparación justa de regresión logística y LinearSVC.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Búsqueda de hiperparámetros con validación cruzada estratificada.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Calibración probabilística del modelo seleccionado.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Evaluación multiclase sobre un test reservado.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Ocho clasificaciones visibles de textos no usados en aprendizaje.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Pipeline completo persistido con Joblib para Streamlit.</li>
-<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Aplicación funcional y pública en <a href="https://microproyecto2-gcrwplkaefh7lt9c7sbryd.streamlit.app">Streamlit Community Cloud</a>.</li>
-</ul>
-<h3 id="Referencias">Referencias<a class="anchor-link" href="#Referencias">¶</a></h3><ul>
+<h2 id="Referencias">Referencias<a class="anchor-link" href="#Referencias">¶</a></h2><ul>
 <li>Naciones Unidas. <a href="https://sdgs.un.org/goals">Objetivos de Desarrollo Sostenible</a>.</li>
 <li>OSDG. <a href="https://osdg.ai/community-dataset">OSDG Community Dataset</a>.</li>
 <li>Scikit-learn. <a href="https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction">Extracción de características de texto</a>.</li>
