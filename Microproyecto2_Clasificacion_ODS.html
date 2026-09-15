@@ -7811,24 +7811,20 @@ a.anchor-link {
 </thead>
 <tbody>
 <tr>
-<td><strong>Integrante(s)</strong></td>
-<td><code>[Nombre(s) del equipo]</code></td>
+<td><strong>Integrantes</strong></td>
+<td>Alejandro Ocampo Rojas · Mateo Alvarez Lopera</td>
 </tr>
 <tr>
-<td><strong>Curso</strong></td>
-<td><code>[Nombre del curso]</code></td>
-</tr>
-<tr>
-<td><strong>Docente</strong></td>
-<td><code>[Nombre del docente]</code></td>
+<td><strong>Asignatura</strong></td>
+<td>Machine Learning No Supervisado</td>
 </tr>
 <tr>
 <td><strong>Institución</strong></td>
-<td><code>[Nombre de la institución]</code></td>
+<td>Universidad de los Andes</td>
 </tr>
 <tr>
-<td><strong>Fecha</strong></td>
-<td><code>[Fecha de entrega]</code></td>
+<td><strong>Aplicación interactiva</strong></td>
+<td><a href="https://microproyecto2-gcrwplkaefh7lt9c7sbryd.streamlit.app">Clasificador público en Streamlit</a></td>
 </tr>
 </tbody>
 </table>
@@ -7838,6 +7834,9 @@ a.anchor-link {
 <li><strong>Aprendizaje no supervisado:</strong> TF-IDF y análisis semántico latente (LSA) para descubrir tópicos.</li>
 <li><strong>Aprendizaje supervisado:</strong> comparación controlada entre regresión logística y máquinas de soporte vectorial lineales para predecir la etiqueta ODS.</li>
 </ul>
+<blockquote>
+<p><strong>Articulación con la asignatura:</strong> LSA constituye el componente no supervisado central, pues descubre estructuras semánticas sin utilizar las etiquetas. La clasificación posterior es necesariamente supervisada porque el enunciado solicita aprender la relación entre cada texto y su ODS conocido.</p>
+</blockquote>
 <p>Todas las decisiones se validan dentro de un pipeline y el conjunto de prueba permanece aislado hasta la evaluación final. El clasificador seleccionado se calibra para producir probabilidades interpretables y se exporta completo para una aplicación Streamlit.</p>
 <blockquote>
 <p><strong>Alcance:</strong> el archivo contiene ejemplos de los ODS 1 a 16, pero ninguno del ODS 17. Por tanto, el sistema solo puede aprender y predecir las 16 clases observadas.</p>
@@ -7984,13 +7983,6 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>Matplotlib is building the font cache; this may take a moment.
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Python: 3.11.15
 pandas: 3.0.2
@@ -8009,6 +8001,7 @@ joblib: 1.5.3
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="3.-Carga-y-comprensi%C3%B3n-de-los-datos">3. Carga y comprensión de los datos<a class="anchor-link" href="#3.-Carga-y-comprensi%C3%B3n-de-los-datos">¶</a></h2><p>El archivo se carga mediante una ruta relativa para mantener la portabilidad. Antes de modelar se validan el esquema, los tipos, los valores faltantes, los duplicados y el dominio de la variable objetivo.</p>
+<p>Como estudiantes de maestría, consideramos que esta auditoría no es solo una formalidad técnica: la traducción automática y la aumentación reportadas en el enunciado pueden introducir expresiones menos naturales o patrones repetitivos. Por ello, los resultados deben entenderse como desempeño sobre este corpus y no como garantía inmediata de generalización a cualquier texto ciudadano.</p>
 </div>
 </div>
 </div>
@@ -8194,41 +8187,41 @@ joblib: 1.5.3
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_a2232">
+<table id="T_5271f">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_a2232_level0_col0">Indicador</th>
-<th class="col_heading level0 col1" id="T_a2232_level0_col1">Resultado</th>
+<th class="col_heading level0 col0" id="T_5271f_level0_col0">Indicador</th>
+<th class="col_heading level0 col1" id="T_5271f_level0_col1">Resultado</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_a2232_row0_col0">Filas</td>
-<td class="data row0 col1" id="T_a2232_row0_col1">9,656</td>
+<td class="data row0 col0" id="T_5271f_row0_col0">Filas</td>
+<td class="data row0 col1" id="T_5271f_row0_col1">9,656</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_a2232_row1_col0">Textos vacíos</td>
-<td class="data row1 col1" id="T_a2232_row1_col1">0</td>
+<td class="data row1 col0" id="T_5271f_row1_col0">Textos vacíos</td>
+<td class="data row1 col1" id="T_5271f_row1_col1">0</td>
 </tr>
 <tr>
-<td class="data row2 col0" id="T_a2232_row2_col0">Valores faltantes</td>
-<td class="data row2 col1" id="T_a2232_row2_col1">0</td>
+<td class="data row2 col0" id="T_5271f_row2_col0">Valores faltantes</td>
+<td class="data row2 col1" id="T_5271f_row2_col1">0</td>
 </tr>
 <tr>
-<td class="data row3 col0" id="T_a2232_row3_col0">Textos duplicados exactos</td>
-<td class="data row3 col1" id="T_a2232_row3_col1">0</td>
+<td class="data row3 col0" id="T_5271f_row3_col0">Textos duplicados exactos</td>
+<td class="data row3 col1" id="T_5271f_row3_col1">0</td>
 </tr>
 <tr>
-<td class="data row4 col0" id="T_a2232_row4_col0">Número de clases</td>
-<td class="data row4 col1" id="T_a2232_row4_col1">16</td>
+<td class="data row4 col0" id="T_5271f_row4_col0">Número de clases</td>
+<td class="data row4 col1" id="T_5271f_row4_col1">16</td>
 </tr>
 <tr>
-<td class="data row5 col0" id="T_a2232_row5_col0">ODS presentes</td>
-<td class="data row5 col1" id="T_a2232_row5_col1">1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16</td>
+<td class="data row5 col0" id="T_5271f_row5_col0">ODS presentes</td>
+<td class="data row5 col1" id="T_5271f_row5_col1">1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16</td>
 </tr>
 <tr>
-<td class="data row6 col0" id="T_a2232_row6_col0">ODS ausentes entre 1 y 17</td>
-<td class="data row6 col1" id="T_a2232_row6_col1">17</td>
+<td class="data row6 col0" id="T_5271f_row6_col0">ODS ausentes entre 1 y 17</td>
+<td class="data row6 col1" id="T_5271f_row6_col1">17</td>
 </tr>
 </tbody>
 </table>
@@ -8324,7 +8317,7 @@ joblib: 1.5.3
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Distribuci%C3%B3n-de-clases-y-longitud-documental">Distribución de clases y longitud documental<a class="anchor-link" href="#Distribuci%C3%B3n-de-clases-y-longitud-documental">¶</a></h3><p>La inspección de frecuencias permite cuantificar el desbalance. No se elimina ninguna clase: la estratificación y la métrica F1 macro permiten evaluar de manera explícita los ODS minoritarios.</p>
+<h3 id="Distribuci%C3%B3n-de-clases-y-longitud-documental">Distribución de clases y longitud documental<a class="anchor-link" href="#Distribuci%C3%B3n-de-clases-y-longitud-documental">¶</a></h3><p>La inspección de frecuencias permite cuantificar el desbalance. No se elimina ninguna clase: la estratificación y la métrica F1 macro permiten evaluar de manera explícita los ODS minoritarios. La razón observada entre la clase mayoritaria y la minoritaria es 3.46; no es extrema, pero sí suficiente para que accuracy por sí sola pueda ocultar fallas en ODS con menor representación.</p>
 </div>
 </div>
 </div>
@@ -8590,12 +8583,12 @@ Prueba:        1,932 textos (20%)
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_07880">
+<table id="T_8e0e6">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_07880_level0_col0">train</th>
-<th class="col_heading level0 col1" id="T_07880_level0_col1">test</th>
+<th class="col_heading level0 col0" id="T_8e0e6_level0_col0">train</th>
+<th class="col_heading level0 col1" id="T_8e0e6_level0_col1">test</th>
 </tr>
 <tr>
 <th class="index_name level0">ODS</th>
@@ -8605,84 +8598,84 @@ Prueba:        1,932 textos (20%)
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_07880_level0_row0">1</th>
-<td class="data row0 col0" id="T_07880_row0_col0">5.23%</td>
-<td class="data row0 col1" id="T_07880_row0_col1">5.23%</td>
+<th class="row_heading level0 row0" id="T_8e0e6_level0_row0">1</th>
+<td class="data row0 col0" id="T_8e0e6_row0_col0">5.23%</td>
+<td class="data row0 col1" id="T_8e0e6_row0_col1">5.23%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_07880_level0_row1">2</th>
-<td class="data row1 col0" id="T_07880_row1_col0">3.82%</td>
-<td class="data row1 col1" id="T_07880_row1_col1">3.83%</td>
+<th class="row_heading level0 row1" id="T_8e0e6_level0_row1">2</th>
+<td class="data row1 col0" id="T_8e0e6_row1_col0">3.82%</td>
+<td class="data row1 col1" id="T_8e0e6_row1_col1">3.83%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_07880_level0_row2">3</th>
-<td class="data row2 col0" id="T_07880_row2_col0">9.26%</td>
-<td class="data row2 col1" id="T_07880_row2_col1">9.27%</td>
+<th class="row_heading level0 row2" id="T_8e0e6_level0_row2">3</th>
+<td class="data row2 col0" id="T_8e0e6_row2_col0">9.26%</td>
+<td class="data row2 col1" id="T_8e0e6_row2_col1">9.27%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_07880_level0_row3">4</th>
-<td class="data row3 col0" id="T_07880_row3_col0">10.62%</td>
-<td class="data row3 col1" id="T_07880_row3_col1">10.61%</td>
+<th class="row_heading level0 row3" id="T_8e0e6_level0_row3">4</th>
+<td class="data row3 col0" id="T_8e0e6_row3_col0">10.62%</td>
+<td class="data row3 col1" id="T_8e0e6_row3_col1">10.61%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_07880_level0_row4">5</th>
-<td class="data row4 col0" id="T_07880_row4_col0">11.08%</td>
-<td class="data row4 col1" id="T_07880_row4_col1">11.08%</td>
+<th class="row_heading level0 row4" id="T_8e0e6_level0_row4">5</th>
+<td class="data row4 col0" id="T_8e0e6_row4_col0">11.08%</td>
+<td class="data row4 col1" id="T_8e0e6_row4_col1">11.08%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_07880_level0_row5">6</th>
-<td class="data row5 col0" id="T_07880_row5_col0">7.20%</td>
-<td class="data row5 col1" id="T_07880_row5_col1">7.19%</td>
+<th class="row_heading level0 row5" id="T_8e0e6_level0_row5">6</th>
+<td class="data row5 col0" id="T_8e0e6_row5_col0">7.20%</td>
+<td class="data row5 col1" id="T_8e0e6_row5_col1">7.19%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row6" id="T_07880_level0_row6">7</th>
-<td class="data row6 col0" id="T_07880_row6_col0">8.14%</td>
-<td class="data row6 col1" id="T_07880_row6_col1">8.18%</td>
+<th class="row_heading level0 row6" id="T_8e0e6_level0_row6">7</th>
+<td class="data row6 col0" id="T_8e0e6_row6_col0">8.14%</td>
+<td class="data row6 col1" id="T_8e0e6_row6_col1">8.18%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row7" id="T_07880_level0_row7">8</th>
-<td class="data row7 col0" id="T_07880_row7_col0">4.62%</td>
-<td class="data row7 col1" id="T_07880_row7_col1">4.61%</td>
+<th class="row_heading level0 row7" id="T_8e0e6_level0_row7">8</th>
+<td class="data row7 col0" id="T_8e0e6_row7_col0">4.62%</td>
+<td class="data row7 col1" id="T_8e0e6_row7_col1">4.61%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row8" id="T_07880_level0_row8">9</th>
-<td class="data row8 col0" id="T_07880_row8_col0">3.55%</td>
-<td class="data row8 col1" id="T_07880_row8_col1">3.57%</td>
+<th class="row_heading level0 row8" id="T_8e0e6_level0_row8">9</th>
+<td class="data row8 col0" id="T_8e0e6_row8_col0">3.55%</td>
+<td class="data row8 col1" id="T_8e0e6_row8_col1">3.57%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row9" id="T_07880_level0_row9">10</th>
-<td class="data row9 col0" id="T_07880_row9_col0">3.65%</td>
-<td class="data row9 col1" id="T_07880_row9_col1">3.62%</td>
+<th class="row_heading level0 row9" id="T_8e0e6_level0_row9">10</th>
+<td class="data row9 col0" id="T_8e0e6_row9_col0">3.65%</td>
+<td class="data row9 col1" id="T_8e0e6_row9_col1">3.62%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row10" id="T_07880_level0_row10">11</th>
-<td class="data row10 col0" id="T_07880_row10_col0">6.28%</td>
-<td class="data row10 col1" id="T_07880_row10_col1">6.31%</td>
+<th class="row_heading level0 row10" id="T_8e0e6_level0_row10">11</th>
+<td class="data row10 col0" id="T_8e0e6_row10_col0">6.28%</td>
+<td class="data row10 col1" id="T_8e0e6_row10_col1">6.31%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row11" id="T_07880_level0_row11">12</th>
-<td class="data row11 col0" id="T_07880_row11_col0">3.24%</td>
-<td class="data row11 col1" id="T_07880_row11_col1">3.21%</td>
+<th class="row_heading level0 row11" id="T_8e0e6_level0_row11">12</th>
+<td class="data row11 col0" id="T_8e0e6_row11_col0">3.24%</td>
+<td class="data row11 col1" id="T_8e0e6_row11_col1">3.21%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row12" id="T_07880_level0_row12">13</th>
-<td class="data row12 col0" id="T_07880_row12_col0">4.80%</td>
-<td class="data row12 col1" id="T_07880_row12_col1">4.81%</td>
+<th class="row_heading level0 row12" id="T_8e0e6_level0_row12">13</th>
+<td class="data row12 col0" id="T_8e0e6_row12_col0">4.80%</td>
+<td class="data row12 col1" id="T_8e0e6_row12_col1">4.81%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row13" id="T_07880_level0_row13">14</th>
-<td class="data row13 col0" id="T_07880_row13_col0">3.91%</td>
-<td class="data row13 col1" id="T_07880_row13_col1">3.88%</td>
+<th class="row_heading level0 row13" id="T_8e0e6_level0_row13">14</th>
+<td class="data row13 col0" id="T_8e0e6_row13_col0">3.91%</td>
+<td class="data row13 col1" id="T_8e0e6_row13_col1">3.88%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row14" id="T_07880_level0_row14">15</th>
-<td class="data row14 col0" id="T_07880_row14_col0">3.42%</td>
-<td class="data row14 col1" id="T_07880_row14_col1">3.42%</td>
+<th class="row_heading level0 row14" id="T_8e0e6_level0_row14">15</th>
+<td class="data row14 col0" id="T_8e0e6_row14_col0">3.42%</td>
+<td class="data row14 col1" id="T_8e0e6_row14_col1">3.42%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row15" id="T_07880_level0_row15">16</th>
-<td class="data row15 col0" id="T_07880_row15_col0">11.19%</td>
-<td class="data row15 col1" id="T_07880_row15_col1">11.18%</td>
+<th class="row_heading level0 row15" id="T_8e0e6_level0_row15">16</th>
+<td class="data row15 col0" id="T_8e0e6_row15_col0">11.19%</td>
+<td class="data row15 col1" id="T_8e0e6_row15_col1">11.18%</td>
 </tr>
 </tbody>
 </table>
@@ -8831,89 +8824,89 @@ Varianza explicada acumulada (15 componentes): 3.84%
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_863e9">
+<table id="T_344c8">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_863e9_level0_col0">Componente</th>
-<th class="col_heading level0 col1" id="T_863e9_level0_col1">Términos principales</th>
-<th class="col_heading level0 col2" id="T_863e9_level0_col2">Peso máximo</th>
+<th class="col_heading level0 col0" id="T_344c8_level0_col0">Componente</th>
+<th class="col_heading level0 col1" id="T_344c8_level0_col1">Términos principales</th>
+<th class="col_heading level0 col2" id="T_344c8_level0_col2">Peso máximo</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_863e9_row0_col0">1</td>
-<td class="data row0 col1" id="T_863e9_row0_col1">paises, mujeres, desarrollo, politicas, han, educacion, ocde, agua, mayor, nivel</td>
-<td class="data row0 col2" id="T_863e9_row0_col2">0.1573</td>
+<td class="data row0 col0" id="T_344c8_row0_col0">1</td>
+<td class="data row0 col1" id="T_344c8_row0_col1">paises, mujeres, desarrollo, politicas, han, educacion, ocde, agua, mayor, nivel</td>
+<td class="data row0 col2" id="T_344c8_row0_col2">0.1573</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_863e9_row1_col0">2</td>
-<td class="data row1 col1" id="T_863e9_row1_col1">mujeres, hombres, genero, laboral, educacion, pobreza, trabajo, empleo, ingresos, ninos</td>
-<td class="data row1 col2" id="T_863e9_row1_col2">0.3771</td>
+<td class="data row1 col0" id="T_344c8_row1_col0">2</td>
+<td class="data row1 col1" id="T_344c8_row1_col1">mujeres, hombres, genero, laboral, educacion, pobreza, trabajo, empleo, ingresos, ninos</td>
+<td class="data row1 col2" id="T_344c8_row1_col2">0.3771</td>
 </tr>
 <tr>
-<td class="data row2 col0" id="T_863e9_row2_col0">3</td>
-<td class="data row2 col1" id="T_863e9_row2_col1">derechos, derecho, humanos, internacional, articulo, mujeres, genero, ley, igualdad, internacionales</td>
-<td class="data row2 col2" id="T_863e9_row2_col2">0.3059</td>
+<td class="data row2 col0" id="T_344c8_row2_col0">3</td>
+<td class="data row2 col1" id="T_344c8_row2_col1">derechos, derecho, humanos, internacional, articulo, mujeres, genero, ley, igualdad, internacionales</td>
+<td class="data row2 col2" id="T_344c8_row2_col2">0.3059</td>
 </tr>
 <tr>
-<td class="data row3 col0" id="T_863e9_row3_col0">4</td>
-<td class="data row3 col1" id="T_863e9_row3_col1">educacion, estudiantes, escuelas, aprendizaje, escuela, atencion, docentes, salud, evaluacion, escolar</td>
-<td class="data row3 col2" id="T_863e9_row3_col2">0.2630</td>
+<td class="data row3 col0" id="T_344c8_row3_col0">4</td>
+<td class="data row3 col1" id="T_344c8_row3_col1">educacion, estudiantes, escuelas, aprendizaje, escuela, atencion, docentes, salud, evaluacion, escolar</td>
+<td class="data row3 col2" id="T_344c8_row3_col2">0.2630</td>
 </tr>
 <tr>
-<td class="data row4 col0" id="T_863e9_row4_col0">5</td>
-<td class="data row4 col1" id="T_863e9_row4_col1">mujeres, genero, hombres, igualdad, energia, politicas, desarrollo, participacion, empresas, agua</td>
-<td class="data row4 col2" id="T_863e9_row4_col2">0.3763</td>
+<td class="data row4 col0" id="T_344c8_row4_col0">5</td>
+<td class="data row4 col1" id="T_344c8_row4_col1">mujeres, genero, hombres, igualdad, energia, politicas, desarrollo, participacion, empresas, agua</td>
+<td class="data row4 col2" id="T_344c8_row4_col2">0.3763</td>
 </tr>
 <tr>
-<td class="data row5 col0" id="T_863e9_row5_col0">6</td>
-<td class="data row5 col1" id="T_863e9_row5_col1">salud, atencion, servicios, mental, agua, pacientes, mujeres, medicos, calidad, primaria</td>
-<td class="data row5 col2" id="T_863e9_row5_col2">0.4354</td>
+<td class="data row5 col0" id="T_344c8_row5_col0">6</td>
+<td class="data row5 col1" id="T_344c8_row5_col1">salud, atencion, servicios, mental, agua, pacientes, mujeres, medicos, calidad, primaria</td>
+<td class="data row5 col2" id="T_344c8_row5_col2">0.4354</td>
 </tr>
 <tr>
-<td class="data row6 col0" id="T_863e9_row6_col0">7</td>
-<td class="data row6 col1" id="T_863e9_row6_col1">agua, aguas, gestion, subterraneas, residuales, hidricos, potable, riego, recursos, estudiantes</td>
-<td class="data row6 col2" id="T_863e9_row6_col2">0.5893</td>
+<td class="data row6 col0" id="T_344c8_row6_col0">7</td>
+<td class="data row6 col1" id="T_344c8_row6_col1">agua, aguas, gestion, subterraneas, residuales, hidricos, potable, riego, recursos, estudiantes</td>
+<td class="data row6 col2" id="T_344c8_row6_col2">0.5893</td>
 </tr>
 <tr>
-<td class="data row7 col0" id="T_863e9_row7_col0">8</td>
-<td class="data row7 col1" id="T_863e9_row7_col1">energia, electricidad, derecho, renovables, derechos, energetica, generacion, energias, humanos, educacion</td>
-<td class="data row7 col2" id="T_863e9_row7_col2">0.3040</td>
+<td class="data row7 col0" id="T_344c8_row7_col0">8</td>
+<td class="data row7 col1" id="T_344c8_row7_col1">energia, electricidad, derecho, renovables, derechos, energetica, generacion, energias, humanos, educacion</td>
+<td class="data row7 col2" id="T_344c8_row7_col2">0.3040</td>
 </tr>
 <tr>
-<td class="data row8 col0" id="T_863e9_row8_col0">9</td>
-<td class="data row8 col1" id="T_863e9_row8_col1">paises, ocde, climatico, promedio, anos, millones, datos, financiacion, cambio, mujeres</td>
-<td class="data row8 col2" id="T_863e9_row8_col2">0.3319</td>
+<td class="data row8 col0" id="T_344c8_row8_col0">9</td>
+<td class="data row8 col1" id="T_344c8_row8_col1">paises, ocde, climatico, promedio, anos, millones, datos, financiacion, cambio, mujeres</td>
+<td class="data row8 col2" id="T_344c8_row8_col2">0.3319</td>
 </tr>
 <tr>
-<td class="data row9 col0" id="T_863e9_row9_col0">10</td>
-<td class="data row9 col1" id="T_863e9_row9_col1">pobreza, energia, genero, ninos, energetica, igualdad, electricidad, renovables, infantil, energias</td>
-<td class="data row9 col2" id="T_863e9_row9_col2">0.3230</td>
+<td class="data row9 col0" id="T_344c8_row9_col0">10</td>
+<td class="data row9 col1" id="T_344c8_row9_col1">pobreza, energia, genero, ninos, energetica, igualdad, electricidad, renovables, infantil, energias</td>
+<td class="data row9 col2" id="T_344c8_row9_col2">0.3230</td>
 </tr>
 <tr>
-<td class="data row10 col0" id="T_863e9_row10_col0">11</td>
-<td class="data row10 col1" id="T_863e9_row10_col1">millones, desarrollo, educacion, rurales, ciento, zonas, mundial, poblacion, anos, ciudades</td>
-<td class="data row10 col2" id="T_863e9_row10_col2">0.2415</td>
+<td class="data row10 col0" id="T_344c8_row10_col0">11</td>
+<td class="data row10 col1" id="T_344c8_row10_col1">millones, desarrollo, educacion, rurales, ciento, zonas, mundial, poblacion, anos, ciudades</td>
+<td class="data row10 col2" id="T_344c8_row10_col2">0.2415</td>
 </tr>
 <tr>
-<td class="data row11 col0" id="T_863e9_row11_col0">12</td>
-<td class="data row11 col1" id="T_863e9_row11_col1">climatico, cambio, ninos, trabajo, adaptacion, mujeres, pobreza, personas, tiempo, financiacion</td>
-<td class="data row11 col2" id="T_863e9_row11_col2">0.2580</td>
+<td class="data row11 col0" id="T_344c8_row11_col0">12</td>
+<td class="data row11 col1" id="T_344c8_row11_col1">climatico, cambio, ninos, trabajo, adaptacion, mujeres, pobreza, personas, tiempo, financiacion</td>
+<td class="data row11 col2" id="T_344c8_row11_col2">0.2580</td>
 </tr>
 <tr>
-<td class="data row12 col0" id="T_863e9_row12_col0">13</td>
-<td class="data row12 col1" id="T_863e9_row12_col1">produccion, alimentos, productos, crecimiento, genero, aumento, alimentaria, pesca, precios, recursos</td>
-<td class="data row12 col2" id="T_863e9_row12_col2">0.2648</td>
+<td class="data row12 col0" id="T_344c8_row12_col0">13</td>
+<td class="data row12 col1" id="T_344c8_row12_col1">produccion, alimentos, productos, crecimiento, genero, aumento, alimentaria, pesca, precios, recursos</td>
+<td class="data row12 col2" id="T_344c8_row12_col2">0.2648</td>
 </tr>
 <tr>
-<td class="data row13 col0" id="T_863e9_row13_col0">14</td>
-<td class="data row13 col1" id="T_863e9_row13_col1">educacion, agua, climatico, cambio, crecimiento, superior, derechos, paises, desigualdad, secundaria</td>
-<td class="data row13 col2" id="T_863e9_row13_col2">0.3757</td>
+<td class="data row13 col0" id="T_344c8_row13_col0">14</td>
+<td class="data row13 col1" id="T_344c8_row13_col1">educacion, agua, climatico, cambio, crecimiento, superior, derechos, paises, desigualdad, secundaria</td>
+<td class="data row13 col2" id="T_344c8_row13_col2">0.3757</td>
 </tr>
 <tr>
-<td class="data row14 col0" id="T_863e9_row14_col0">15</td>
-<td class="data row14 col1" id="T_863e9_row14_col1">paises, acceso, servicios, desarrollo, alimentos, datos, empresas, muchos, infraestructura, precios</td>
-<td class="data row14 col2" id="T_863e9_row14_col2">0.2815</td>
+<td class="data row14 col0" id="T_344c8_row14_col0">15</td>
+<td class="data row14 col1" id="T_344c8_row14_col1">paises, acceso, servicios, desarrollo, alimentos, datos, empresas, muchos, infraestructura, precios</td>
+<td class="data row14 col2" id="T_344c8_row14_col2">0.2815</td>
 </tr>
 </tbody>
 </table>
@@ -8968,6 +8961,7 @@ Varianza explicada acumulada (15 componentes): 3.84%
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Interpretaci%C3%B3n-cualitativa-frente-a-los-ODS">Interpretación cualitativa frente a los ODS<a class="anchor-link" href="#Interpretaci%C3%B3n-cualitativa-frente-a-los-ODS">¶</a></h3><p>La interpretación se basa en conjuntos de términos, no en palabras aisladas. Los solapamientos son esperables porque muchos problemas de desarrollo sostenible son transversales; por ejemplo, pobreza, género, educación y empleo aparecen relacionados.</p>
+<p>Los 15 componentes explican 3.84% de la varianza, un valor bajo en términos absolutos pero esperable en una matriz textual dispersa con 15,838 términos. En este escenario no evaluamos LSA únicamente por varianza acumulada: privilegiamos la coherencia semántica de los términos y su capacidad para revelar ejes interpretables. Ocho componentes presentan asociaciones plausibles con los ODS, mientras que los cruces entre objetivos muestran que LSA descubre temas latentes y no reproduce mecánicamente las etiquetas.</p>
 </div>
 </div>
 </div>
@@ -9012,72 +9006,72 @@ Varianza explicada acumulada (15 componentes): 3.84%
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_38259">
+<table id="T_7e8df">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_38259_level0_col0">Componente</th>
-<th class="col_heading level0 col1" id="T_38259_level0_col1">ODS relacionados</th>
-<th class="col_heading level0 col2" id="T_38259_level0_col2">Lectura</th>
-<th class="col_heading level0 col3" id="T_38259_level0_col3">Justificación</th>
-<th class="col_heading level0 col4" id="T_38259_level0_col4">Términos observados</th>
+<th class="col_heading level0 col0" id="T_7e8df_level0_col0">Componente</th>
+<th class="col_heading level0 col1" id="T_7e8df_level0_col1">ODS relacionados</th>
+<th class="col_heading level0 col2" id="T_7e8df_level0_col2">Lectura</th>
+<th class="col_heading level0 col3" id="T_7e8df_level0_col3">Justificación</th>
+<th class="col_heading level0 col4" id="T_7e8df_level0_col4">Términos observados</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_38259_row0_col0">2</td>
-<td class="data row0 col1" id="T_38259_row0_col1">ODS 5, 8 y 1</td>
-<td class="data row0 col2" id="T_38259_row0_col2">Género, empleo e ingresos</td>
-<td class="data row0 col3" id="T_38259_row0_col3">La presencia conjunta de mujeres, hombres, género, trabajo e ingresos conecta igualdad, trabajo decente y pobreza.</td>
-<td class="data row0 col4" id="T_38259_row0_col4">mujeres, hombres, genero, laboral, educacion, pobreza, trabajo, empleo, ingresos, ninos</td>
+<td class="data row0 col0" id="T_7e8df_row0_col0">2</td>
+<td class="data row0 col1" id="T_7e8df_row0_col1">ODS 5, 8 y 1</td>
+<td class="data row0 col2" id="T_7e8df_row0_col2">Género, empleo e ingresos</td>
+<td class="data row0 col3" id="T_7e8df_row0_col3">La presencia conjunta de mujeres, hombres, género, trabajo e ingresos conecta igualdad, trabajo decente y pobreza.</td>
+<td class="data row0 col4" id="T_7e8df_row0_col4">mujeres, hombres, genero, laboral, educacion, pobreza, trabajo, empleo, ingresos, ninos</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_38259_row1_col0">3</td>
-<td class="data row1 col1" id="T_38259_row1_col1">ODS 16 y 5</td>
-<td class="data row1 col2" id="T_38259_row1_col2">Derechos, justicia e igualdad</td>
-<td class="data row1 col3" id="T_38259_row1_col3">Derechos humanos, ley, justicia, violencia e igualdad describen instituciones y protección de derechos.</td>
-<td class="data row1 col4" id="T_38259_row1_col4">derechos, derecho, humanos, internacional, articulo, mujeres, genero, ley, igualdad, internacionales</td>
+<td class="data row1 col0" id="T_7e8df_row1_col0">3</td>
+<td class="data row1 col1" id="T_7e8df_row1_col1">ODS 16 y 5</td>
+<td class="data row1 col2" id="T_7e8df_row1_col2">Derechos, justicia e igualdad</td>
+<td class="data row1 col3" id="T_7e8df_row1_col3">Derechos humanos, ley, justicia, violencia e igualdad describen instituciones y protección de derechos.</td>
+<td class="data row1 col4" id="T_7e8df_row1_col4">derechos, derecho, humanos, internacional, articulo, mujeres, genero, ley, igualdad, internacionales</td>
 </tr>
 <tr>
-<td class="data row2 col0" id="T_38259_row2_col0">4</td>
-<td class="data row2 col1" id="T_38259_row2_col1">ODS 4</td>
-<td class="data row2 col2" id="T_38259_row2_col2">Educación de calidad</td>
-<td class="data row2 col3" id="T_38259_row2_col3">Estudiantes, escuelas, aprendizaje, docentes y evaluación forman un tópico educativo muy definido.</td>
-<td class="data row2 col4" id="T_38259_row2_col4">educacion, estudiantes, escuelas, aprendizaje, escuela, atencion, docentes, salud, evaluacion, escolar</td>
+<td class="data row2 col0" id="T_7e8df_row2_col0">4</td>
+<td class="data row2 col1" id="T_7e8df_row2_col1">ODS 4</td>
+<td class="data row2 col2" id="T_7e8df_row2_col2">Educación de calidad</td>
+<td class="data row2 col3" id="T_7e8df_row2_col3">Estudiantes, escuelas, aprendizaje, docentes y evaluación forman un tópico educativo muy definido.</td>
+<td class="data row2 col4" id="T_7e8df_row2_col4">educacion, estudiantes, escuelas, aprendizaje, escuela, atencion, docentes, salud, evaluacion, escolar</td>
 </tr>
 <tr>
-<td class="data row3 col0" id="T_38259_row3_col0">6</td>
-<td class="data row3 col1" id="T_38259_row3_col1">ODS 3</td>
-<td class="data row3 col2" id="T_38259_row3_col2">Salud y bienestar</td>
-<td class="data row3 col3" id="T_38259_row3_col3">Salud, atención, pacientes, servicios, enfermedades y personal médico representan provisión sanitaria.</td>
-<td class="data row3 col4" id="T_38259_row3_col4">salud, atencion, servicios, mental, agua, pacientes, mujeres, medicos, calidad, primaria</td>
+<td class="data row3 col0" id="T_7e8df_row3_col0">6</td>
+<td class="data row3 col1" id="T_7e8df_row3_col1">ODS 3</td>
+<td class="data row3 col2" id="T_7e8df_row3_col2">Salud y bienestar</td>
+<td class="data row3 col3" id="T_7e8df_row3_col3">Salud, atención, pacientes, servicios, enfermedades y personal médico representan provisión sanitaria.</td>
+<td class="data row3 col4" id="T_7e8df_row3_col4">salud, atencion, servicios, mental, agua, pacientes, mujeres, medicos, calidad, primaria</td>
 </tr>
 <tr>
-<td class="data row4 col0" id="T_38259_row4_col0">7</td>
-<td class="data row4 col1" id="T_38259_row4_col1">ODS 6</td>
-<td class="data row4 col2" id="T_38259_row4_col2">Agua limpia y saneamiento</td>
-<td class="data row4 col3" id="T_38259_row4_col3">Agua, aguas residuales, recursos hídricos, riego y agua potable se alinean directamente con el ODS 6.</td>
-<td class="data row4 col4" id="T_38259_row4_col4">agua, aguas, gestion, subterraneas, residuales, hidricos, potable, riego, recursos, estudiantes</td>
+<td class="data row4 col0" id="T_7e8df_row4_col0">7</td>
+<td class="data row4 col1" id="T_7e8df_row4_col1">ODS 6</td>
+<td class="data row4 col2" id="T_7e8df_row4_col2">Agua limpia y saneamiento</td>
+<td class="data row4 col3" id="T_7e8df_row4_col3">Agua, aguas residuales, recursos hídricos, riego y agua potable se alinean directamente con el ODS 6.</td>
+<td class="data row4 col4" id="T_7e8df_row4_col4">agua, aguas, gestion, subterraneas, residuales, hidricos, potable, riego, recursos, estudiantes</td>
 </tr>
 <tr>
-<td class="data row5 col0" id="T_38259_row5_col0">8</td>
-<td class="data row5 col1" id="T_38259_row5_col1">ODS 7</td>
-<td class="data row5 col2" id="T_38259_row5_col2">Energía asequible y limpia</td>
-<td class="data row5 col3" id="T_38259_row5_col3">Energía, electricidad, renovables, generación y eficiencia caracterizan la transición energética.</td>
-<td class="data row5 col4" id="T_38259_row5_col4">energia, electricidad, derecho, renovables, derechos, energetica, generacion, energias, humanos, educacion</td>
+<td class="data row5 col0" id="T_7e8df_row5_col0">8</td>
+<td class="data row5 col1" id="T_7e8df_row5_col1">ODS 7</td>
+<td class="data row5 col2" id="T_7e8df_row5_col2">Energía asequible y limpia</td>
+<td class="data row5 col3" id="T_7e8df_row5_col3">Energía, electricidad, renovables, generación y eficiencia caracterizan la transición energética.</td>
+<td class="data row5 col4" id="T_7e8df_row5_col4">energia, electricidad, derecho, renovables, derechos, energetica, generacion, energias, humanos, educacion</td>
 </tr>
 <tr>
-<td class="data row6 col0" id="T_38259_row6_col0">12</td>
-<td class="data row6 col1" id="T_38259_row6_col1">ODS 13</td>
-<td class="data row6 col2" id="T_38259_row6_col2">Cambio climático y adaptación</td>
-<td class="data row6 col3" id="T_38259_row6_col3">Cambio climático, adaptación, financiación y tiempo reflejan respuestas sociales y económicas frente al clima.</td>
-<td class="data row6 col4" id="T_38259_row6_col4">climatico, cambio, ninos, trabajo, adaptacion, mujeres, pobreza, personas, tiempo, financiacion</td>
+<td class="data row6 col0" id="T_7e8df_row6_col0">12</td>
+<td class="data row6 col1" id="T_7e8df_row6_col1">ODS 13</td>
+<td class="data row6 col2" id="T_7e8df_row6_col2">Cambio climático y adaptación</td>
+<td class="data row6 col3" id="T_7e8df_row6_col3">Cambio climático, adaptación, financiación y tiempo reflejan respuestas sociales y económicas frente al clima.</td>
+<td class="data row6 col4" id="T_7e8df_row6_col4">climatico, cambio, ninos, trabajo, adaptacion, mujeres, pobreza, personas, tiempo, financiacion</td>
 </tr>
 <tr>
-<td class="data row7 col0" id="T_38259_row7_col0">13</td>
-<td class="data row7 col1" id="T_38259_row7_col1">ODS 12, 2 y 14</td>
-<td class="data row7 col2" id="T_38259_row7_col2">Producción, alimentos y recursos</td>
-<td class="data row7 col3" id="T_38259_row7_col3">Producción, consumo, alimentos, pesca y recursos revelan relaciones entre consumo responsable, seguridad alimentaria y océanos.</td>
-<td class="data row7 col4" id="T_38259_row7_col4">produccion, alimentos, productos, crecimiento, genero, aumento, alimentaria, pesca, precios, recursos</td>
+<td class="data row7 col0" id="T_7e8df_row7_col0">13</td>
+<td class="data row7 col1" id="T_7e8df_row7_col1">ODS 12, 2 y 14</td>
+<td class="data row7 col2" id="T_7e8df_row7_col2">Producción, alimentos y recursos</td>
+<td class="data row7 col3" id="T_7e8df_row7_col3">Producción, consumo, alimentos, pesca y recursos revelan relaciones entre consumo responsable, seguridad alimentaria y océanos.</td>
+<td class="data row7 col4" id="T_7e8df_row7_col4">produccion, alimentos, productos, crecimiento, genero, aumento, alimentaria, pesca, precios, recursos</td>
 </tr>
 </tbody>
 </table>
@@ -9284,45 +9278,45 @@ Mejor configuración:
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_05e1e">
+<table id="T_6e297">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_05e1e_level0_col0">modelo</th>
-<th class="col_heading level0 col1" id="T_05e1e_level0_col1">ranking</th>
-<th class="col_heading level0 col2" id="T_05e1e_level0_col2">escalamiento</th>
-<th class="col_heading level0 col3" id="T_05e1e_level0_col3">F1_macro_validación</th>
-<th class="col_heading level0 col4" id="T_05e1e_level0_col4">desv_validación</th>
-<th class="col_heading level0 col5" id="T_05e1e_level0_col5">F1_macro_entrenamiento</th>
-<th class="col_heading level0 col6" id="T_05e1e_level0_col6">componentes_SVD</th>
-<th class="col_heading level0 col7" id="T_05e1e_level0_col7">C</th>
-<th class="col_heading level0 col8" id="T_05e1e_level0_col8">peso_clases</th>
-<th class="col_heading level0 col9" id="T_05e1e_level0_col9">tiempo_ajuste_s</th>
+<th class="col_heading level0 col0" id="T_6e297_level0_col0">modelo</th>
+<th class="col_heading level0 col1" id="T_6e297_level0_col1">ranking</th>
+<th class="col_heading level0 col2" id="T_6e297_level0_col2">escalamiento</th>
+<th class="col_heading level0 col3" id="T_6e297_level0_col3">F1_macro_validación</th>
+<th class="col_heading level0 col4" id="T_6e297_level0_col4">desv_validación</th>
+<th class="col_heading level0 col5" id="T_6e297_level0_col5">F1_macro_entrenamiento</th>
+<th class="col_heading level0 col6" id="T_6e297_level0_col6">componentes_SVD</th>
+<th class="col_heading level0 col7" id="T_6e297_level0_col7">C</th>
+<th class="col_heading level0 col8" id="T_6e297_level0_col8">peso_clases</th>
+<th class="col_heading level0 col9" id="T_6e297_level0_col9">tiempo_ajuste_s</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_05e1e_row0_col0">LinearSVC</td>
-<td class="data row0 col1" id="T_05e1e_row0_col1">1</td>
-<td class="data row0 col2" id="T_05e1e_row0_col2">StandardScaler</td>
-<td class="data row0 col3" id="T_05e1e_row0_col3">0.8462</td>
-<td class="data row0 col4" id="T_05e1e_row0_col4">0.0027</td>
-<td class="data row0 col5" id="T_05e1e_row0_col5">0.8919</td>
-<td class="data row0 col6" id="T_05e1e_row0_col6">300</td>
-<td class="data row0 col7" id="T_05e1e_row0_col7">0.001000</td>
-<td class="data row0 col8" id="T_05e1e_row0_col8">balanced</td>
-<td class="data row0 col9" id="T_05e1e_row0_col9">4.43</td>
+<td class="data row0 col0" id="T_6e297_row0_col0">LinearSVC</td>
+<td class="data row0 col1" id="T_6e297_row0_col1">1</td>
+<td class="data row0 col2" id="T_6e297_row0_col2">StandardScaler</td>
+<td class="data row0 col3" id="T_6e297_row0_col3">0.8462</td>
+<td class="data row0 col4" id="T_6e297_row0_col4">0.0027</td>
+<td class="data row0 col5" id="T_6e297_row0_col5">0.8919</td>
+<td class="data row0 col6" id="T_6e297_row0_col6">300</td>
+<td class="data row0 col7" id="T_6e297_row0_col7">0.001000</td>
+<td class="data row0 col8" id="T_6e297_row0_col8">balanced</td>
+<td class="data row0 col9" id="T_6e297_row0_col9">4.68</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_05e1e_row1_col0">LogisticRegression</td>
-<td class="data row1 col1" id="T_05e1e_row1_col1">3</td>
-<td class="data row1 col2" id="T_05e1e_row1_col2">Normalizer</td>
-<td class="data row1 col3" id="T_05e1e_row1_col3">0.8443</td>
-<td class="data row1 col4" id="T_05e1e_row1_col4">0.0067</td>
-<td class="data row1 col5" id="T_05e1e_row1_col5">0.9371</td>
-<td class="data row1 col6" id="T_05e1e_row1_col6">300</td>
-<td class="data row1 col7" id="T_05e1e_row1_col7">3.000000</td>
-<td class="data row1 col8" id="T_05e1e_row1_col8">balanced</td>
-<td class="data row1 col9" id="T_05e1e_row1_col9">1.41</td>
+<td class="data row1 col0" id="T_6e297_row1_col0">LogisticRegression</td>
+<td class="data row1 col1" id="T_6e297_row1_col1">3</td>
+<td class="data row1 col2" id="T_6e297_row1_col2">Normalizer</td>
+<td class="data row1 col3" id="T_6e297_row1_col3">0.8443</td>
+<td class="data row1 col4" id="T_6e297_row1_col4">0.0067</td>
+<td class="data row1 col5" id="T_6e297_row1_col5">0.9371</td>
+<td class="data row1 col6" id="T_6e297_row1_col6">300</td>
+<td class="data row1 col7" id="T_6e297_row1_col7">3.000000</td>
+<td class="data row1 col8" id="T_6e297_row1_col8">balanced</td>
+<td class="data row1 col9" id="T_6e297_row1_col9">0.81</td>
 </tr>
 </tbody>
 </table>
@@ -9340,201 +9334,201 @@ Mejor configuración:
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_e1ecd">
+<table id="T_66cce">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_e1ecd_level0_col0">ranking</th>
-<th class="col_heading level0 col1" id="T_e1ecd_level0_col1">modelo</th>
-<th class="col_heading level0 col2" id="T_e1ecd_level0_col2">escalamiento</th>
-<th class="col_heading level0 col3" id="T_e1ecd_level0_col3">F1_macro_validación</th>
-<th class="col_heading level0 col4" id="T_e1ecd_level0_col4">desv_validación</th>
-<th class="col_heading level0 col5" id="T_e1ecd_level0_col5">F1_macro_entrenamiento</th>
-<th class="col_heading level0 col6" id="T_e1ecd_level0_col6">componentes_SVD</th>
-<th class="col_heading level0 col7" id="T_e1ecd_level0_col7">C</th>
-<th class="col_heading level0 col8" id="T_e1ecd_level0_col8">peso_clases</th>
-<th class="col_heading level0 col9" id="T_e1ecd_level0_col9">tiempo_ajuste_s</th>
+<th class="col_heading level0 col0" id="T_66cce_level0_col0">ranking</th>
+<th class="col_heading level0 col1" id="T_66cce_level0_col1">modelo</th>
+<th class="col_heading level0 col2" id="T_66cce_level0_col2">escalamiento</th>
+<th class="col_heading level0 col3" id="T_66cce_level0_col3">F1_macro_validación</th>
+<th class="col_heading level0 col4" id="T_66cce_level0_col4">desv_validación</th>
+<th class="col_heading level0 col5" id="T_66cce_level0_col5">F1_macro_entrenamiento</th>
+<th class="col_heading level0 col6" id="T_66cce_level0_col6">componentes_SVD</th>
+<th class="col_heading level0 col7" id="T_66cce_level0_col7">C</th>
+<th class="col_heading level0 col8" id="T_66cce_level0_col8">peso_clases</th>
+<th class="col_heading level0 col9" id="T_66cce_level0_col9">tiempo_ajuste_s</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_e1ecd_row0_col0">1</td>
-<td class="data row0 col1" id="T_e1ecd_row0_col1">LinearSVC</td>
-<td class="data row0 col2" id="T_e1ecd_row0_col2">StandardScaler</td>
-<td class="data row0 col3" id="T_e1ecd_row0_col3">0.8462</td>
-<td class="data row0 col4" id="T_e1ecd_row0_col4">0.0027</td>
-<td class="data row0 col5" id="T_e1ecd_row0_col5">0.8919</td>
-<td class="data row0 col6" id="T_e1ecd_row0_col6">300</td>
-<td class="data row0 col7" id="T_e1ecd_row0_col7">0.001000</td>
-<td class="data row0 col8" id="T_e1ecd_row0_col8">balanced</td>
-<td class="data row0 col9" id="T_e1ecd_row0_col9">4.43</td>
+<td class="data row0 col0" id="T_66cce_row0_col0">1</td>
+<td class="data row0 col1" id="T_66cce_row0_col1">LinearSVC</td>
+<td class="data row0 col2" id="T_66cce_row0_col2">StandardScaler</td>
+<td class="data row0 col3" id="T_66cce_row0_col3">0.8462</td>
+<td class="data row0 col4" id="T_66cce_row0_col4">0.0027</td>
+<td class="data row0 col5" id="T_66cce_row0_col5">0.8919</td>
+<td class="data row0 col6" id="T_66cce_row0_col6">300</td>
+<td class="data row0 col7" id="T_66cce_row0_col7">0.001000</td>
+<td class="data row0 col8" id="T_66cce_row0_col8">balanced</td>
+<td class="data row0 col9" id="T_66cce_row0_col9">4.68</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_e1ecd_row1_col0">2</td>
-<td class="data row1 col1" id="T_e1ecd_row1_col1">LinearSVC</td>
-<td class="data row1 col2" id="T_e1ecd_row1_col2">Normalizer</td>
-<td class="data row1 col3" id="T_e1ecd_row1_col3">0.8444</td>
-<td class="data row1 col4" id="T_e1ecd_row1_col4">0.0040</td>
-<td class="data row1 col5" id="T_e1ecd_row1_col5">0.8991</td>
-<td class="data row1 col6" id="T_e1ecd_row1_col6">300</td>
-<td class="data row1 col7" id="T_e1ecd_row1_col7">0.100000</td>
-<td class="data row1 col8" id="T_e1ecd_row1_col8">balanced</td>
-<td class="data row1 col9" id="T_e1ecd_row1_col9">5.07</td>
+<td class="data row1 col0" id="T_66cce_row1_col0">2</td>
+<td class="data row1 col1" id="T_66cce_row1_col1">LinearSVC</td>
+<td class="data row1 col2" id="T_66cce_row1_col2">Normalizer</td>
+<td class="data row1 col3" id="T_66cce_row1_col3">0.8444</td>
+<td class="data row1 col4" id="T_66cce_row1_col4">0.0040</td>
+<td class="data row1 col5" id="T_66cce_row1_col5">0.8991</td>
+<td class="data row1 col6" id="T_66cce_row1_col6">300</td>
+<td class="data row1 col7" id="T_66cce_row1_col7">0.100000</td>
+<td class="data row1 col8" id="T_66cce_row1_col8">balanced</td>
+<td class="data row1 col9" id="T_66cce_row1_col9">5.44</td>
 </tr>
 <tr>
-<td class="data row2 col0" id="T_e1ecd_row2_col0">3</td>
-<td class="data row2 col1" id="T_e1ecd_row2_col1">LogisticRegression</td>
-<td class="data row2 col2" id="T_e1ecd_row2_col2">Normalizer</td>
-<td class="data row2 col3" id="T_e1ecd_row2_col3">0.8443</td>
-<td class="data row2 col4" id="T_e1ecd_row2_col4">0.0067</td>
-<td class="data row2 col5" id="T_e1ecd_row2_col5">0.9371</td>
-<td class="data row2 col6" id="T_e1ecd_row2_col6">300</td>
-<td class="data row2 col7" id="T_e1ecd_row2_col7">3.000000</td>
-<td class="data row2 col8" id="T_e1ecd_row2_col8">nan</td>
-<td class="data row2 col9" id="T_e1ecd_row2_col9">1.41</td>
+<td class="data row2 col0" id="T_66cce_row2_col0">3</td>
+<td class="data row2 col1" id="T_66cce_row2_col1">LogisticRegression</td>
+<td class="data row2 col2" id="T_66cce_row2_col2">Normalizer</td>
+<td class="data row2 col3" id="T_66cce_row2_col3">0.8443</td>
+<td class="data row2 col4" id="T_66cce_row2_col4">0.0067</td>
+<td class="data row2 col5" id="T_66cce_row2_col5">0.9371</td>
+<td class="data row2 col6" id="T_66cce_row2_col6">300</td>
+<td class="data row2 col7" id="T_66cce_row2_col7">3.000000</td>
+<td class="data row2 col8" id="T_66cce_row2_col8">nan</td>
+<td class="data row2 col9" id="T_66cce_row2_col9">0.81</td>
 </tr>
 <tr>
-<td class="data row3 col0" id="T_e1ecd_row3_col0">4</td>
-<td class="data row3 col1" id="T_e1ecd_row3_col1">LinearSVC</td>
-<td class="data row3 col2" id="T_e1ecd_row3_col2">Normalizer</td>
-<td class="data row3 col3" id="T_e1ecd_row3_col3">0.8440</td>
-<td class="data row3 col4" id="T_e1ecd_row3_col4">0.0065</td>
-<td class="data row3 col5" id="T_e1ecd_row3_col5">0.9342</td>
-<td class="data row3 col6" id="T_e1ecd_row3_col6">300</td>
-<td class="data row3 col7" id="T_e1ecd_row3_col7">0.500000</td>
-<td class="data row3 col8" id="T_e1ecd_row3_col8">balanced</td>
-<td class="data row3 col9" id="T_e1ecd_row3_col9">4.95</td>
+<td class="data row3 col0" id="T_66cce_row3_col0">4</td>
+<td class="data row3 col1" id="T_66cce_row3_col1">LinearSVC</td>
+<td class="data row3 col2" id="T_66cce_row3_col2">Normalizer</td>
+<td class="data row3 col3" id="T_66cce_row3_col3">0.8440</td>
+<td class="data row3 col4" id="T_66cce_row3_col4">0.0065</td>
+<td class="data row3 col5" id="T_66cce_row3_col5">0.9342</td>
+<td class="data row3 col6" id="T_66cce_row3_col6">300</td>
+<td class="data row3 col7" id="T_66cce_row3_col7">0.500000</td>
+<td class="data row3 col8" id="T_66cce_row3_col8">balanced</td>
+<td class="data row3 col9" id="T_66cce_row3_col9">4.70</td>
 </tr>
 <tr>
-<td class="data row4 col0" id="T_e1ecd_row4_col0">5</td>
-<td class="data row4 col1" id="T_e1ecd_row4_col1">LinearSVC</td>
-<td class="data row4 col2" id="T_e1ecd_row4_col2">Normalizer</td>
-<td class="data row4 col3" id="T_e1ecd_row4_col3">0.8440</td>
-<td class="data row4 col4" id="T_e1ecd_row4_col4">0.0040</td>
-<td class="data row4 col5" id="T_e1ecd_row4_col5">0.9312</td>
-<td class="data row4 col6" id="T_e1ecd_row4_col6">300</td>
-<td class="data row4 col7" id="T_e1ecd_row4_col7">0.500000</td>
-<td class="data row4 col8" id="T_e1ecd_row4_col8">nan</td>
-<td class="data row4 col9" id="T_e1ecd_row4_col9">5.07</td>
+<td class="data row4 col0" id="T_66cce_row4_col0">5</td>
+<td class="data row4 col1" id="T_66cce_row4_col1">LinearSVC</td>
+<td class="data row4 col2" id="T_66cce_row4_col2">Normalizer</td>
+<td class="data row4 col3" id="T_66cce_row4_col3">0.8440</td>
+<td class="data row4 col4" id="T_66cce_row4_col4">0.0040</td>
+<td class="data row4 col5" id="T_66cce_row4_col5">0.9312</td>
+<td class="data row4 col6" id="T_66cce_row4_col6">300</td>
+<td class="data row4 col7" id="T_66cce_row4_col7">0.500000</td>
+<td class="data row4 col8" id="T_66cce_row4_col8">nan</td>
+<td class="data row4 col9" id="T_66cce_row4_col9">5.00</td>
 </tr>
 <tr>
-<td class="data row5 col0" id="T_e1ecd_row5_col0">6</td>
-<td class="data row5 col1" id="T_e1ecd_row5_col1">LinearSVC</td>
-<td class="data row5 col2" id="T_e1ecd_row5_col2">StandardScaler</td>
-<td class="data row5 col3" id="T_e1ecd_row5_col3">0.8409</td>
-<td class="data row5 col4" id="T_e1ecd_row5_col4">0.0052</td>
-<td class="data row5 col5" id="T_e1ecd_row5_col5">0.9356</td>
-<td class="data row5 col6" id="T_e1ecd_row5_col6">300</td>
-<td class="data row5 col7" id="T_e1ecd_row5_col7">0.010000</td>
-<td class="data row5 col8" id="T_e1ecd_row5_col8">nan</td>
-<td class="data row5 col9" id="T_e1ecd_row5_col9">4.26</td>
+<td class="data row5 col0" id="T_66cce_row5_col0">6</td>
+<td class="data row5 col1" id="T_66cce_row5_col1">LinearSVC</td>
+<td class="data row5 col2" id="T_66cce_row5_col2">StandardScaler</td>
+<td class="data row5 col3" id="T_66cce_row5_col3">0.8409</td>
+<td class="data row5 col4" id="T_66cce_row5_col4">0.0052</td>
+<td class="data row5 col5" id="T_66cce_row5_col5">0.9356</td>
+<td class="data row5 col6" id="T_66cce_row5_col6">300</td>
+<td class="data row5 col7" id="T_66cce_row5_col7">0.010000</td>
+<td class="data row5 col8" id="T_66cce_row5_col8">nan</td>
+<td class="data row5 col9" id="T_66cce_row5_col9">4.30</td>
 </tr>
 <tr>
-<td class="data row6 col0" id="T_e1ecd_row6_col0">7</td>
-<td class="data row6 col1" id="T_e1ecd_row6_col1">LogisticRegression</td>
-<td class="data row6 col2" id="T_e1ecd_row6_col2">Normalizer</td>
-<td class="data row6 col3" id="T_e1ecd_row6_col3">0.8406</td>
-<td class="data row6 col4" id="T_e1ecd_row6_col4">0.0045</td>
-<td class="data row6 col5" id="T_e1ecd_row6_col5">0.9089</td>
-<td class="data row6 col6" id="T_e1ecd_row6_col6">300</td>
-<td class="data row6 col7" id="T_e1ecd_row6_col7">1.000000</td>
-<td class="data row6 col8" id="T_e1ecd_row6_col8">balanced</td>
-<td class="data row6 col9" id="T_e1ecd_row6_col9">14.80</td>
+<td class="data row6 col0" id="T_66cce_row6_col0">7</td>
+<td class="data row6 col1" id="T_66cce_row6_col1">LogisticRegression</td>
+<td class="data row6 col2" id="T_66cce_row6_col2">Normalizer</td>
+<td class="data row6 col3" id="T_66cce_row6_col3">0.8406</td>
+<td class="data row6 col4" id="T_66cce_row6_col4">0.0045</td>
+<td class="data row6 col5" id="T_66cce_row6_col5">0.9089</td>
+<td class="data row6 col6" id="T_66cce_row6_col6">300</td>
+<td class="data row6 col7" id="T_66cce_row6_col7">1.000000</td>
+<td class="data row6 col8" id="T_66cce_row6_col8">balanced</td>
+<td class="data row6 col9" id="T_66cce_row6_col9">11.98</td>
 </tr>
 <tr>
-<td class="data row7 col0" id="T_e1ecd_row7_col0">8</td>
-<td class="data row7 col1" id="T_e1ecd_row7_col1">LogisticRegression</td>
-<td class="data row7 col2" id="T_e1ecd_row7_col2">Normalizer</td>
-<td class="data row7 col3" id="T_e1ecd_row7_col3">0.8405</td>
-<td class="data row7 col4" id="T_e1ecd_row7_col4">0.0022</td>
-<td class="data row7 col5" id="T_e1ecd_row7_col5">0.9056</td>
-<td class="data row7 col6" id="T_e1ecd_row7_col6">300</td>
-<td class="data row7 col7" id="T_e1ecd_row7_col7">1.000000</td>
-<td class="data row7 col8" id="T_e1ecd_row7_col8">nan</td>
-<td class="data row7 col9" id="T_e1ecd_row7_col9">20.29</td>
+<td class="data row7 col0" id="T_66cce_row7_col0">8</td>
+<td class="data row7 col1" id="T_66cce_row7_col1">LogisticRegression</td>
+<td class="data row7 col2" id="T_66cce_row7_col2">Normalizer</td>
+<td class="data row7 col3" id="T_66cce_row7_col3">0.8405</td>
+<td class="data row7 col4" id="T_66cce_row7_col4">0.0022</td>
+<td class="data row7 col5" id="T_66cce_row7_col5">0.9056</td>
+<td class="data row7 col6" id="T_66cce_row7_col6">300</td>
+<td class="data row7 col7" id="T_66cce_row7_col7">1.000000</td>
+<td class="data row7 col8" id="T_66cce_row7_col8">nan</td>
+<td class="data row7 col9" id="T_66cce_row7_col9">17.91</td>
 </tr>
 <tr>
-<td class="data row8 col0" id="T_e1ecd_row8_col0">9</td>
-<td class="data row8 col1" id="T_e1ecd_row8_col1">LinearSVC</td>
-<td class="data row8 col2" id="T_e1ecd_row8_col2">Normalizer</td>
-<td class="data row8 col3" id="T_e1ecd_row8_col3">0.8405</td>
-<td class="data row8 col4" id="T_e1ecd_row8_col4">0.0060</td>
-<td class="data row8 col5" id="T_e1ecd_row8_col5">0.8967</td>
-<td class="data row8 col6" id="T_e1ecd_row8_col6">300</td>
-<td class="data row8 col7" id="T_e1ecd_row8_col7">0.100000</td>
-<td class="data row8 col8" id="T_e1ecd_row8_col8">nan</td>
-<td class="data row8 col9" id="T_e1ecd_row8_col9">5.17</td>
+<td class="data row8 col0" id="T_66cce_row8_col0">9</td>
+<td class="data row8 col1" id="T_66cce_row8_col1">LinearSVC</td>
+<td class="data row8 col2" id="T_66cce_row8_col2">Normalizer</td>
+<td class="data row8 col3" id="T_66cce_row8_col3">0.8405</td>
+<td class="data row8 col4" id="T_66cce_row8_col4">0.0060</td>
+<td class="data row8 col5" id="T_66cce_row8_col5">0.8967</td>
+<td class="data row8 col6" id="T_66cce_row8_col6">300</td>
+<td class="data row8 col7" id="T_66cce_row8_col7">0.100000</td>
+<td class="data row8 col8" id="T_66cce_row8_col8">nan</td>
+<td class="data row8 col9" id="T_66cce_row8_col9">4.97</td>
 </tr>
 <tr>
-<td class="data row9 col0" id="T_e1ecd_row9_col0">10</td>
-<td class="data row9 col1" id="T_e1ecd_row9_col1">LinearSVC</td>
-<td class="data row9 col2" id="T_e1ecd_row9_col2">Normalizer</td>
-<td class="data row9 col3" id="T_e1ecd_row9_col3">0.8404</td>
-<td class="data row9 col4" id="T_e1ecd_row9_col4">0.0057</td>
-<td class="data row9 col5" id="T_e1ecd_row9_col5">0.9468</td>
-<td class="data row9 col6" id="T_e1ecd_row9_col6">300</td>
-<td class="data row9 col7" id="T_e1ecd_row9_col7">1.000000</td>
-<td class="data row9 col8" id="T_e1ecd_row9_col8">nan</td>
-<td class="data row9 col9" id="T_e1ecd_row9_col9">5.13</td>
+<td class="data row9 col0" id="T_66cce_row9_col0">10</td>
+<td class="data row9 col1" id="T_66cce_row9_col1">LinearSVC</td>
+<td class="data row9 col2" id="T_66cce_row9_col2">Normalizer</td>
+<td class="data row9 col3" id="T_66cce_row9_col3">0.8404</td>
+<td class="data row9 col4" id="T_66cce_row9_col4">0.0057</td>
+<td class="data row9 col5" id="T_66cce_row9_col5">0.9468</td>
+<td class="data row9 col6" id="T_66cce_row9_col6">300</td>
+<td class="data row9 col7" id="T_66cce_row9_col7">1.000000</td>
+<td class="data row9 col8" id="T_66cce_row9_col8">nan</td>
+<td class="data row9 col9" id="T_66cce_row9_col9">4.97</td>
 </tr>
 <tr>
-<td class="data row10 col0" id="T_e1ecd_row10_col0">11</td>
-<td class="data row10 col1" id="T_e1ecd_row10_col1">LinearSVC</td>
-<td class="data row10 col2" id="T_e1ecd_row10_col2">StandardScaler</td>
-<td class="data row10 col3" id="T_e1ecd_row10_col3">0.8404</td>
-<td class="data row10 col4" id="T_e1ecd_row10_col4">0.0049</td>
-<td class="data row10 col5" id="T_e1ecd_row10_col5">0.8892</td>
-<td class="data row10 col6" id="T_e1ecd_row10_col6">300</td>
-<td class="data row10 col7" id="T_e1ecd_row10_col7">0.001000</td>
-<td class="data row10 col8" id="T_e1ecd_row10_col8">nan</td>
-<td class="data row10 col9" id="T_e1ecd_row10_col9">4.33</td>
+<td class="data row10 col0" id="T_66cce_row10_col0">11</td>
+<td class="data row10 col1" id="T_66cce_row10_col1">LinearSVC</td>
+<td class="data row10 col2" id="T_66cce_row10_col2">StandardScaler</td>
+<td class="data row10 col3" id="T_66cce_row10_col3">0.8404</td>
+<td class="data row10 col4" id="T_66cce_row10_col4">0.0049</td>
+<td class="data row10 col5" id="T_66cce_row10_col5">0.8892</td>
+<td class="data row10 col6" id="T_66cce_row10_col6">300</td>
+<td class="data row10 col7" id="T_66cce_row10_col7">0.001000</td>
+<td class="data row10 col8" id="T_66cce_row10_col8">nan</td>
+<td class="data row10 col9" id="T_66cce_row10_col9">4.30</td>
 </tr>
 <tr>
-<td class="data row11 col0" id="T_e1ecd_row11_col0">12</td>
-<td class="data row11 col1" id="T_e1ecd_row11_col1">LinearSVC</td>
-<td class="data row11 col2" id="T_e1ecd_row11_col2">StandardScaler</td>
-<td class="data row11 col3" id="T_e1ecd_row11_col3">0.8396</td>
-<td class="data row11 col4" id="T_e1ecd_row11_col4">0.0036</td>
-<td class="data row11 col5" id="T_e1ecd_row11_col5">0.9053</td>
-<td class="data row11 col6" id="T_e1ecd_row11_col6">200</td>
-<td class="data row11 col7" id="T_e1ecd_row11_col7">0.010000</td>
-<td class="data row11 col8" id="T_e1ecd_row11_col8">nan</td>
-<td class="data row11 col9" id="T_e1ecd_row11_col9">3.10</td>
+<td class="data row11 col0" id="T_66cce_row11_col0">12</td>
+<td class="data row11 col1" id="T_66cce_row11_col1">LinearSVC</td>
+<td class="data row11 col2" id="T_66cce_row11_col2">StandardScaler</td>
+<td class="data row11 col3" id="T_66cce_row11_col3">0.8396</td>
+<td class="data row11 col4" id="T_66cce_row11_col4">0.0036</td>
+<td class="data row11 col5" id="T_66cce_row11_col5">0.9053</td>
+<td class="data row11 col6" id="T_66cce_row11_col6">200</td>
+<td class="data row11 col7" id="T_66cce_row11_col7">0.010000</td>
+<td class="data row11 col8" id="T_66cce_row11_col8">nan</td>
+<td class="data row11 col9" id="T_66cce_row11_col9">3.04</td>
 </tr>
 <tr>
-<td class="data row12 col0" id="T_e1ecd_row12_col0">13</td>
-<td class="data row12 col1" id="T_e1ecd_row12_col1">LinearSVC</td>
-<td class="data row12 col2" id="T_e1ecd_row12_col2">StandardScaler</td>
-<td class="data row12 col3" id="T_e1ecd_row12_col3">0.8396</td>
-<td class="data row12 col4" id="T_e1ecd_row12_col4">0.0027</td>
-<td class="data row12 col5" id="T_e1ecd_row12_col5">0.9060</td>
-<td class="data row12 col6" id="T_e1ecd_row12_col6">200</td>
-<td class="data row12 col7" id="T_e1ecd_row12_col7">0.010000</td>
-<td class="data row12 col8" id="T_e1ecd_row12_col8">balanced</td>
-<td class="data row12 col9" id="T_e1ecd_row12_col9">3.20</td>
+<td class="data row12 col0" id="T_66cce_row12_col0">13</td>
+<td class="data row12 col1" id="T_66cce_row12_col1">LinearSVC</td>
+<td class="data row12 col2" id="T_66cce_row12_col2">StandardScaler</td>
+<td class="data row12 col3" id="T_66cce_row12_col3">0.8396</td>
+<td class="data row12 col4" id="T_66cce_row12_col4">0.0027</td>
+<td class="data row12 col5" id="T_66cce_row12_col5">0.9060</td>
+<td class="data row12 col6" id="T_66cce_row12_col6">200</td>
+<td class="data row12 col7" id="T_66cce_row12_col7">0.010000</td>
+<td class="data row12 col8" id="T_66cce_row12_col8">balanced</td>
+<td class="data row12 col9" id="T_66cce_row12_col9">3.27</td>
 </tr>
 <tr>
-<td class="data row13 col0" id="T_e1ecd_row13_col0">14</td>
-<td class="data row13 col1" id="T_e1ecd_row13_col1">LinearSVC</td>
-<td class="data row13 col2" id="T_e1ecd_row13_col2">StandardScaler</td>
-<td class="data row13 col3" id="T_e1ecd_row13_col3">0.8388</td>
-<td class="data row13 col4" id="T_e1ecd_row13_col4">0.0048</td>
-<td class="data row13 col5" id="T_e1ecd_row13_col5">0.9394</td>
-<td class="data row13 col6" id="T_e1ecd_row13_col6">300</td>
-<td class="data row13 col7" id="T_e1ecd_row13_col7">0.010000</td>
-<td class="data row13 col8" id="T_e1ecd_row13_col8">balanced</td>
-<td class="data row13 col9" id="T_e1ecd_row13_col9">4.55</td>
+<td class="data row13 col0" id="T_66cce_row13_col0">14</td>
+<td class="data row13 col1" id="T_66cce_row13_col1">LinearSVC</td>
+<td class="data row13 col2" id="T_66cce_row13_col2">StandardScaler</td>
+<td class="data row13 col3" id="T_66cce_row13_col3">0.8388</td>
+<td class="data row13 col4" id="T_66cce_row13_col4">0.0048</td>
+<td class="data row13 col5" id="T_66cce_row13_col5">0.9394</td>
+<td class="data row13 col6" id="T_66cce_row13_col6">300</td>
+<td class="data row13 col7" id="T_66cce_row13_col7">0.010000</td>
+<td class="data row13 col8" id="T_66cce_row13_col8">balanced</td>
+<td class="data row13 col9" id="T_66cce_row13_col9">4.42</td>
 </tr>
 <tr>
-<td class="data row14 col0" id="T_e1ecd_row14_col0">15</td>
-<td class="data row14 col1" id="T_e1ecd_row14_col1">LinearSVC</td>
-<td class="data row14 col2" id="T_e1ecd_row14_col2">Normalizer</td>
-<td class="data row14 col3" id="T_e1ecd_row14_col3">0.8387</td>
-<td class="data row14 col4" id="T_e1ecd_row14_col4">0.0062</td>
-<td class="data row14 col5" id="T_e1ecd_row14_col5">0.9471</td>
-<td class="data row14 col6" id="T_e1ecd_row14_col6">300</td>
-<td class="data row14 col7" id="T_e1ecd_row14_col7">1.000000</td>
-<td class="data row14 col8" id="T_e1ecd_row14_col8">balanced</td>
-<td class="data row14 col9" id="T_e1ecd_row14_col9">4.93</td>
+<td class="data row14 col0" id="T_66cce_row14_col0">15</td>
+<td class="data row14 col1" id="T_66cce_row14_col1">LinearSVC</td>
+<td class="data row14 col2" id="T_66cce_row14_col2">Normalizer</td>
+<td class="data row14 col3" id="T_66cce_row14_col3">0.8387</td>
+<td class="data row14 col4" id="T_66cce_row14_col4">0.0062</td>
+<td class="data row14 col5" id="T_66cce_row14_col5">0.9471</td>
+<td class="data row14 col6" id="T_66cce_row14_col6">300</td>
+<td class="data row14 col7" id="T_66cce_row14_col7">1.000000</td>
+<td class="data row14 col8" id="T_66cce_row14_col8">balanced</td>
+<td class="data row14 col9" id="T_66cce_row14_col9">4.80</td>
 </tr>
 </tbody>
 </table>
@@ -9549,7 +9543,8 @@ Mejor configuración:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="7.1-Calibraci%C3%B3n-del-clasificador-seleccionado">7.1 Calibración del clasificador seleccionado<a class="anchor-link" href="#7.1-Calibraci%C3%B3n-del-clasificador-seleccionado">¶</a></h3><p><code>LinearSVC</code> produce distancias a hiperplanos, no probabilidades. Aplicar directamente softmax a esos márgenes generaría valores que suman uno, pero <strong>no probabilidades calibradas</strong>. Para que la aplicación pueda comunicar incertidumbre de forma responsable, se aplica calibración sigmoidal mediante <code>CalibratedClassifierCV</code>.</p>
+<h3 id="7.1-Calibraci%C3%B3n-del-clasificador-seleccionado">7.1 Calibración del clasificador seleccionado<a class="anchor-link" href="#7.1-Calibraci%C3%B3n-del-clasificador-seleccionado">¶</a></h3><p>La búsqueda produjo resultados muy próximos: F1 macro de validación de 0.846 para LinearSVC y 0.844 para regresión logística. En consecuencia, la selección de LinearSVC no se presenta como una superioridad amplia, sino como una mejora pequeña y reproducible bajo el mismo protocolo, acompañada por una menor brecha entre entrenamiento y validación.</p>
+<p><code>LinearSVC</code> produce distancias a hiperplanos, no probabilidades. Aplicar directamente softmax a esos márgenes generaría valores que suman uno, pero <strong>no probabilidades calibradas</strong>. Para que la aplicación pueda comunicar incertidumbre de forma responsable, se aplica calibración sigmoidal mediante <code>CalibratedClassifierCV</code>.</p>
 <p>Con <code>ensemble=False</code>, scikit-learn obtiene predicciones fuera de muestra dentro del entrenamiento para ajustar la calibración y finalmente entrena un único pipeline base sobre todo el conjunto de entrenamiento. El test continúa completamente aislado.</p>
 </div>
 </div>
@@ -9662,33 +9657,33 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_444b7">
+<table id="T_a0e3e">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_444b7_level0_col0">Valor</th>
+<th class="col_heading level0 col0" id="T_a0e3e_level0_col0">Valor</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_444b7_level0_row0">Accuracy</th>
-<td class="data row0 col0" id="T_444b7_row0_col0">0.8820</td>
+<th class="row_heading level0 row0" id="T_a0e3e_level0_row0">Accuracy</th>
+<td class="data row0 col0" id="T_a0e3e_row0_col0">0.8820</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_444b7_level0_row1">Balanced accuracy</th>
-<td class="data row1 col0" id="T_444b7_row1_col0">0.8545</td>
+<th class="row_heading level0 row1" id="T_a0e3e_level0_row1">Balanced accuracy</th>
+<td class="data row1 col0" id="T_a0e3e_row1_col0">0.8545</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_444b7_level0_row2">F1 macro</th>
-<td class="data row2 col0" id="T_444b7_row2_col0">0.8531</td>
+<th class="row_heading level0 row2" id="T_a0e3e_level0_row2">F1 macro</th>
+<td class="data row2 col0" id="T_a0e3e_row2_col0">0.8531</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_444b7_level0_row3">F1 ponderado</th>
-<td class="data row3 col0" id="T_444b7_row3_col0">0.8813</td>
+<th class="row_heading level0 row3" id="T_a0e3e_level0_row3">F1 ponderado</th>
+<td class="data row3 col0" id="T_a0e3e_row3_col0">0.8813</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_444b7_level0_row4">Log-loss</th>
-<td class="data row4 col0" id="T_444b7_row4_col0">0.4410</td>
+<th class="row_heading level0 row4" id="T_a0e3e_level0_row4">Log-loss</th>
+<td class="data row4 col0" id="T_a0e3e_row4_col0">0.4410</td>
 </tr>
 </tbody>
 </table>
@@ -9699,149 +9694,149 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_14dc8">
+<table id="T_7414c">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_14dc8_level0_col0">precision</th>
-<th class="col_heading level0 col1" id="T_14dc8_level0_col1">recall</th>
-<th class="col_heading level0 col2" id="T_14dc8_level0_col2">f1-score</th>
-<th class="col_heading level0 col3" id="T_14dc8_level0_col3">support</th>
+<th class="col_heading level0 col0" id="T_7414c_level0_col0">precision</th>
+<th class="col_heading level0 col1" id="T_7414c_level0_col1">recall</th>
+<th class="col_heading level0 col2" id="T_7414c_level0_col2">f1-score</th>
+<th class="col_heading level0 col3" id="T_7414c_level0_col3">support</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_14dc8_level0_row0">ODS 1: Fin de la pobreza</th>
-<td class="data row0 col0" id="T_14dc8_row0_col0">0.8602</td>
-<td class="data row0 col1" id="T_14dc8_row0_col1">0.7921</td>
-<td class="data row0 col2" id="T_14dc8_row0_col2">0.8247</td>
-<td class="data row0 col3" id="T_14dc8_row0_col3">101.0000</td>
+<th class="row_heading level0 row0" id="T_7414c_level0_row0">ODS 1: Fin de la pobreza</th>
+<td class="data row0 col0" id="T_7414c_row0_col0">0.8602</td>
+<td class="data row0 col1" id="T_7414c_row0_col1">0.7921</td>
+<td class="data row0 col2" id="T_7414c_row0_col2">0.8247</td>
+<td class="data row0 col3" id="T_7414c_row0_col3">101.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_14dc8_level0_row1">ODS 2: Hambre cero</th>
-<td class="data row1 col0" id="T_14dc8_row1_col0">0.7791</td>
-<td class="data row1 col1" id="T_14dc8_row1_col1">0.9054</td>
-<td class="data row1 col2" id="T_14dc8_row1_col2">0.8375</td>
-<td class="data row1 col3" id="T_14dc8_row1_col3">74.0000</td>
+<th class="row_heading level0 row1" id="T_7414c_level0_row1">ODS 2: Hambre cero</th>
+<td class="data row1 col0" id="T_7414c_row1_col0">0.7791</td>
+<td class="data row1 col1" id="T_7414c_row1_col1">0.9054</td>
+<td class="data row1 col2" id="T_7414c_row1_col2">0.8375</td>
+<td class="data row1 col3" id="T_7414c_row1_col3">74.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_14dc8_level0_row2">ODS 3: Salud y bienestar</th>
-<td class="data row2 col0" id="T_14dc8_row2_col0">0.9076</td>
-<td class="data row2 col1" id="T_14dc8_row2_col1">0.9330</td>
-<td class="data row2 col2" id="T_14dc8_row2_col2">0.9201</td>
-<td class="data row2 col3" id="T_14dc8_row2_col3">179.0000</td>
+<th class="row_heading level0 row2" id="T_7414c_level0_row2">ODS 3: Salud y bienestar</th>
+<td class="data row2 col0" id="T_7414c_row2_col0">0.9076</td>
+<td class="data row2 col1" id="T_7414c_row2_col1">0.9330</td>
+<td class="data row2 col2" id="T_7414c_row2_col2">0.9201</td>
+<td class="data row2 col3" id="T_7414c_row2_col3">179.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_14dc8_level0_row3">ODS 4: Educación de calidad</th>
-<td class="data row3 col0" id="T_14dc8_row3_col0">0.9481</td>
-<td class="data row3 col1" id="T_14dc8_row3_col1">0.9805</td>
-<td class="data row3 col2" id="T_14dc8_row3_col2">0.9640</td>
-<td class="data row3 col3" id="T_14dc8_row3_col3">205.0000</td>
+<th class="row_heading level0 row3" id="T_7414c_level0_row3">ODS 4: Educación de calidad</th>
+<td class="data row3 col0" id="T_7414c_row3_col0">0.9481</td>
+<td class="data row3 col1" id="T_7414c_row3_col1">0.9805</td>
+<td class="data row3 col2" id="T_7414c_row3_col2">0.9640</td>
+<td class="data row3 col3" id="T_7414c_row3_col3">205.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_14dc8_level0_row4">ODS 5: Igualdad de género</th>
-<td class="data row4 col0" id="T_14dc8_row4_col0">0.9434</td>
-<td class="data row4 col1" id="T_14dc8_row4_col1">0.9346</td>
-<td class="data row4 col2" id="T_14dc8_row4_col2">0.9390</td>
-<td class="data row4 col3" id="T_14dc8_row4_col3">214.0000</td>
+<th class="row_heading level0 row4" id="T_7414c_level0_row4">ODS 5: Igualdad de género</th>
+<td class="data row4 col0" id="T_7414c_row4_col0">0.9434</td>
+<td class="data row4 col1" id="T_7414c_row4_col1">0.9346</td>
+<td class="data row4 col2" id="T_7414c_row4_col2">0.9390</td>
+<td class="data row4 col3" id="T_7414c_row4_col3">214.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_14dc8_level0_row5">ODS 6: Agua limpia y saneamiento</th>
-<td class="data row5 col0" id="T_14dc8_row5_col0">0.9394</td>
-<td class="data row5 col1" id="T_14dc8_row5_col1">0.8921</td>
-<td class="data row5 col2" id="T_14dc8_row5_col2">0.9151</td>
-<td class="data row5 col3" id="T_14dc8_row5_col3">139.0000</td>
+<th class="row_heading level0 row5" id="T_7414c_level0_row5">ODS 6: Agua limpia y saneamiento</th>
+<td class="data row5 col0" id="T_7414c_row5_col0">0.9394</td>
+<td class="data row5 col1" id="T_7414c_row5_col1">0.8921</td>
+<td class="data row5 col2" id="T_7414c_row5_col2">0.9151</td>
+<td class="data row5 col3" id="T_7414c_row5_col3">139.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row6" id="T_14dc8_level0_row6">ODS 7: Energía asequible y no contaminante</th>
-<td class="data row6 col0" id="T_14dc8_row6_col0">0.9304</td>
-<td class="data row6 col1" id="T_14dc8_row6_col1">0.9304</td>
-<td class="data row6 col2" id="T_14dc8_row6_col2">0.9304</td>
-<td class="data row6 col3" id="T_14dc8_row6_col3">158.0000</td>
+<th class="row_heading level0 row6" id="T_7414c_level0_row6">ODS 7: Energía asequible y no contaminante</th>
+<td class="data row6 col0" id="T_7414c_row6_col0">0.9304</td>
+<td class="data row6 col1" id="T_7414c_row6_col1">0.9304</td>
+<td class="data row6 col2" id="T_7414c_row6_col2">0.9304</td>
+<td class="data row6 col3" id="T_7414c_row6_col3">158.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row7" id="T_14dc8_level0_row7">ODS 8: Trabajo decente y crecimiento económico</th>
-<td class="data row7 col0" id="T_14dc8_row7_col0">0.6265</td>
-<td class="data row7 col1" id="T_14dc8_row7_col1">0.5843</td>
-<td class="data row7 col2" id="T_14dc8_row7_col2">0.6047</td>
-<td class="data row7 col3" id="T_14dc8_row7_col3">89.0000</td>
+<th class="row_heading level0 row7" id="T_7414c_level0_row7">ODS 8: Trabajo decente y crecimiento económico</th>
+<td class="data row7 col0" id="T_7414c_row7_col0">0.6265</td>
+<td class="data row7 col1" id="T_7414c_row7_col1">0.5843</td>
+<td class="data row7 col2" id="T_7414c_row7_col2">0.6047</td>
+<td class="data row7 col3" id="T_7414c_row7_col3">89.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row8" id="T_14dc8_level0_row8">ODS 9: Industria, innovación e infraestructura</th>
-<td class="data row8 col0" id="T_14dc8_row8_col0">0.6709</td>
-<td class="data row8 col1" id="T_14dc8_row8_col1">0.7681</td>
-<td class="data row8 col2" id="T_14dc8_row8_col2">0.7162</td>
-<td class="data row8 col3" id="T_14dc8_row8_col3">69.0000</td>
+<th class="row_heading level0 row8" id="T_7414c_level0_row8">ODS 9: Industria, innovación e infraestructura</th>
+<td class="data row8 col0" id="T_7414c_row8_col0">0.6709</td>
+<td class="data row8 col1" id="T_7414c_row8_col1">0.7681</td>
+<td class="data row8 col2" id="T_7414c_row8_col2">0.7162</td>
+<td class="data row8 col3" id="T_7414c_row8_col3">69.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row9" id="T_14dc8_level0_row9">ODS 10: Reducción de las desigualdades</th>
-<td class="data row9 col0" id="T_14dc8_row9_col0">0.7288</td>
-<td class="data row9 col1" id="T_14dc8_row9_col1">0.6143</td>
-<td class="data row9 col2" id="T_14dc8_row9_col2">0.6667</td>
-<td class="data row9 col3" id="T_14dc8_row9_col3">70.0000</td>
+<th class="row_heading level0 row9" id="T_7414c_level0_row9">ODS 10: Reducción de las desigualdades</th>
+<td class="data row9 col0" id="T_7414c_row9_col0">0.7288</td>
+<td class="data row9 col1" id="T_7414c_row9_col1">0.6143</td>
+<td class="data row9 col2" id="T_7414c_row9_col2">0.6667</td>
+<td class="data row9 col3" id="T_7414c_row9_col3">70.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row10" id="T_14dc8_level0_row10">ODS 11: Ciudades y comunidades sostenibles</th>
-<td class="data row10 col0" id="T_14dc8_row10_col0">0.8226</td>
-<td class="data row10 col1" id="T_14dc8_row10_col1">0.8361</td>
-<td class="data row10 col2" id="T_14dc8_row10_col2">0.8293</td>
-<td class="data row10 col3" id="T_14dc8_row10_col3">122.0000</td>
+<th class="row_heading level0 row10" id="T_7414c_level0_row10">ODS 11: Ciudades y comunidades sostenibles</th>
+<td class="data row10 col0" id="T_7414c_row10_col0">0.8226</td>
+<td class="data row10 col1" id="T_7414c_row10_col1">0.8361</td>
+<td class="data row10 col2" id="T_7414c_row10_col2">0.8293</td>
+<td class="data row10 col3" id="T_7414c_row10_col3">122.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row11" id="T_14dc8_level0_row11">ODS 12: Producción y consumo responsables</th>
-<td class="data row11 col0" id="T_14dc8_row11_col0">0.8462</td>
-<td class="data row11 col1" id="T_14dc8_row11_col1">0.8871</td>
-<td class="data row11 col2" id="T_14dc8_row11_col2">0.8661</td>
-<td class="data row11 col3" id="T_14dc8_row11_col3">62.0000</td>
+<th class="row_heading level0 row11" id="T_7414c_level0_row11">ODS 12: Producción y consumo responsables</th>
+<td class="data row11 col0" id="T_7414c_row11_col0">0.8462</td>
+<td class="data row11 col1" id="T_7414c_row11_col1">0.8871</td>
+<td class="data row11 col2" id="T_7414c_row11_col2">0.8661</td>
+<td class="data row11 col3" id="T_7414c_row11_col3">62.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row12" id="T_14dc8_level0_row12">ODS 13: Acción por el clima</th>
-<td class="data row12 col0" id="T_14dc8_row12_col0">0.8652</td>
-<td class="data row12 col1" id="T_14dc8_row12_col1">0.8280</td>
-<td class="data row12 col2" id="T_14dc8_row12_col2">0.8462</td>
-<td class="data row12 col3" id="T_14dc8_row12_col3">93.0000</td>
+<th class="row_heading level0 row12" id="T_7414c_level0_row12">ODS 13: Acción por el clima</th>
+<td class="data row12 col0" id="T_7414c_row12_col0">0.8652</td>
+<td class="data row12 col1" id="T_7414c_row12_col1">0.8280</td>
+<td class="data row12 col2" id="T_7414c_row12_col2">0.8462</td>
+<td class="data row12 col3" id="T_7414c_row12_col3">93.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row13" id="T_14dc8_level0_row13">ODS 14: Vida submarina</th>
-<td class="data row13 col0" id="T_14dc8_row13_col0">0.9091</td>
-<td class="data row13 col1" id="T_14dc8_row13_col1">0.9333</td>
-<td class="data row13 col2" id="T_14dc8_row13_col2">0.9211</td>
-<td class="data row13 col3" id="T_14dc8_row13_col3">75.0000</td>
+<th class="row_heading level0 row13" id="T_7414c_level0_row13">ODS 14: Vida submarina</th>
+<td class="data row13 col0" id="T_7414c_row13_col0">0.9091</td>
+<td class="data row13 col1" id="T_7414c_row13_col1">0.9333</td>
+<td class="data row13 col2" id="T_7414c_row13_col2">0.9211</td>
+<td class="data row13 col3" id="T_7414c_row13_col3">75.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row14" id="T_14dc8_level0_row14">ODS 15: Vida de ecosistemas terrestres</th>
-<td class="data row14 col0" id="T_14dc8_row14_col0">0.9219</td>
-<td class="data row14 col1" id="T_14dc8_row14_col1">0.8939</td>
-<td class="data row14 col2" id="T_14dc8_row14_col2">0.9077</td>
-<td class="data row14 col3" id="T_14dc8_row14_col3">66.0000</td>
+<th class="row_heading level0 row14" id="T_7414c_level0_row14">ODS 15: Vida de ecosistemas terrestres</th>
+<td class="data row14 col0" id="T_7414c_row14_col0">0.9219</td>
+<td class="data row14 col1" id="T_7414c_row14_col1">0.8939</td>
+<td class="data row14 col2" id="T_7414c_row14_col2">0.9077</td>
+<td class="data row14 col3" id="T_7414c_row14_col3">66.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row15" id="T_14dc8_level0_row15">ODS 16: Paz, justicia e instituciones sólidas</th>
-<td class="data row15 col0" id="T_14dc8_row15_col0">0.9628</td>
-<td class="data row15 col1" id="T_14dc8_row15_col1">0.9583</td>
-<td class="data row15 col2" id="T_14dc8_row15_col2">0.9606</td>
-<td class="data row15 col3" id="T_14dc8_row15_col3">216.0000</td>
+<th class="row_heading level0 row15" id="T_7414c_level0_row15">ODS 16: Paz, justicia e instituciones sólidas</th>
+<td class="data row15 col0" id="T_7414c_row15_col0">0.9628</td>
+<td class="data row15 col1" id="T_7414c_row15_col1">0.9583</td>
+<td class="data row15 col2" id="T_7414c_row15_col2">0.9606</td>
+<td class="data row15 col3" id="T_7414c_row15_col3">216.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row16" id="T_14dc8_level0_row16">accuracy</th>
-<td class="data row16 col0" id="T_14dc8_row16_col0">0.8820</td>
-<td class="data row16 col1" id="T_14dc8_row16_col1">0.8820</td>
-<td class="data row16 col2" id="T_14dc8_row16_col2">0.8820</td>
-<td class="data row16 col3" id="T_14dc8_row16_col3">0.8820</td>
+<th class="row_heading level0 row16" id="T_7414c_level0_row16">accuracy</th>
+<td class="data row16 col0" id="T_7414c_row16_col0">0.8820</td>
+<td class="data row16 col1" id="T_7414c_row16_col1">0.8820</td>
+<td class="data row16 col2" id="T_7414c_row16_col2">0.8820</td>
+<td class="data row16 col3" id="T_7414c_row16_col3">0.8820</td>
 </tr>
 <tr>
-<th class="row_heading level0 row17" id="T_14dc8_level0_row17">macro avg</th>
-<td class="data row17 col0" id="T_14dc8_row17_col0">0.8539</td>
-<td class="data row17 col1" id="T_14dc8_row17_col1">0.8545</td>
-<td class="data row17 col2" id="T_14dc8_row17_col2">0.8531</td>
-<td class="data row17 col3" id="T_14dc8_row17_col3">1932.0000</td>
+<th class="row_heading level0 row17" id="T_7414c_level0_row17">macro avg</th>
+<td class="data row17 col0" id="T_7414c_row17_col0">0.8539</td>
+<td class="data row17 col1" id="T_7414c_row17_col1">0.8545</td>
+<td class="data row17 col2" id="T_7414c_row17_col2">0.8531</td>
+<td class="data row17 col3" id="T_7414c_row17_col3">1932.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row18" id="T_14dc8_level0_row18">weighted avg</th>
-<td class="data row18 col0" id="T_14dc8_row18_col0">0.8821</td>
-<td class="data row18 col1" id="T_14dc8_row18_col1">0.8820</td>
-<td class="data row18 col2" id="T_14dc8_row18_col2">0.8813</td>
-<td class="data row18 col3" id="T_14dc8_row18_col3">1932.0000</td>
+<th class="row_heading level0 row18" id="T_7414c_level0_row18">weighted avg</th>
+<td class="data row18 col0" id="T_7414c_row18_col0">0.8821</td>
+<td class="data row18 col1" id="T_7414c_row18_col1">0.8820</td>
+<td class="data row18 col2" id="T_7414c_row18_col2">0.8813</td>
+<td class="data row18 col3" id="T_7414c_row18_col3">1932.0000</td>
 </tr>
 </tbody>
 </table>
@@ -9900,6 +9895,7 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="An%C3%A1lisis-de-errores-por-clase">Análisis de errores por clase<a class="anchor-link" href="#An%C3%A1lisis-de-errores-por-clase">¶</a></h3><p>El recall permite identificar qué ODS pierde más ejemplos verdaderos; la precisión muestra cuáles reciben más falsos positivos. La siguiente tabla se ordena por F1 para dirigir la inspección hacia las clases más difíciles.</p>
+<p>El accuracy de 0.882 supera al F1 macro de 0.853 y al balanced accuracy de 0.854. Esta diferencia es coherente con el desbalance moderado: el desempeño global es alto, pero no homogéneo entre ODS. En particular, los ODS 8, 10 y 9 presentan los menores F1; su vocabulario se cruza con empleo, desigualdad, industria y desarrollo económico. Desde una lectura aplicada, estos casos deberían priorizarse para revisión humana o para ampliar el corpus con ejemplos más discriminantes.</p>
 </div>
 </div>
 </div>
@@ -9934,14 +9930,14 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_e611d">
+<table id="T_49f6b">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_e611d_level0_col0">precision</th>
-<th class="col_heading level0 col1" id="T_e611d_level0_col1">recall</th>
-<th class="col_heading level0 col2" id="T_e611d_level0_col2">f1-score</th>
-<th class="col_heading level0 col3" id="T_e611d_level0_col3">support</th>
+<th class="col_heading level0 col0" id="T_49f6b_level0_col0">precision</th>
+<th class="col_heading level0 col1" id="T_49f6b_level0_col1">recall</th>
+<th class="col_heading level0 col2" id="T_49f6b_level0_col2">f1-score</th>
+<th class="col_heading level0 col3" id="T_49f6b_level0_col3">support</th>
 </tr>
 <tr>
 <th class="index_name level0">Clase</th>
@@ -9953,116 +9949,116 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_e611d_level0_row0">ODS 8: Trabajo decente y crecimiento económico</th>
-<td class="data row0 col0" id="T_e611d_row0_col0">0.6265</td>
-<td class="data row0 col1" id="T_e611d_row0_col1">0.5843</td>
-<td class="data row0 col2" id="T_e611d_row0_col2">0.6047</td>
-<td class="data row0 col3" id="T_e611d_row0_col3">89.0000</td>
+<th class="row_heading level0 row0" id="T_49f6b_level0_row0">ODS 8: Trabajo decente y crecimiento económico</th>
+<td class="data row0 col0" id="T_49f6b_row0_col0">0.6265</td>
+<td class="data row0 col1" id="T_49f6b_row0_col1">0.5843</td>
+<td class="data row0 col2" id="T_49f6b_row0_col2">0.6047</td>
+<td class="data row0 col3" id="T_49f6b_row0_col3">89.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_e611d_level0_row1">ODS 10: Reducción de las desigualdades</th>
-<td class="data row1 col0" id="T_e611d_row1_col0">0.7288</td>
-<td class="data row1 col1" id="T_e611d_row1_col1">0.6143</td>
-<td class="data row1 col2" id="T_e611d_row1_col2">0.6667</td>
-<td class="data row1 col3" id="T_e611d_row1_col3">70.0000</td>
+<th class="row_heading level0 row1" id="T_49f6b_level0_row1">ODS 10: Reducción de las desigualdades</th>
+<td class="data row1 col0" id="T_49f6b_row1_col0">0.7288</td>
+<td class="data row1 col1" id="T_49f6b_row1_col1">0.6143</td>
+<td class="data row1 col2" id="T_49f6b_row1_col2">0.6667</td>
+<td class="data row1 col3" id="T_49f6b_row1_col3">70.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_e611d_level0_row2">ODS 9: Industria, innovación e infraestructura</th>
-<td class="data row2 col0" id="T_e611d_row2_col0">0.6709</td>
-<td class="data row2 col1" id="T_e611d_row2_col1">0.7681</td>
-<td class="data row2 col2" id="T_e611d_row2_col2">0.7162</td>
-<td class="data row2 col3" id="T_e611d_row2_col3">69.0000</td>
+<th class="row_heading level0 row2" id="T_49f6b_level0_row2">ODS 9: Industria, innovación e infraestructura</th>
+<td class="data row2 col0" id="T_49f6b_row2_col0">0.6709</td>
+<td class="data row2 col1" id="T_49f6b_row2_col1">0.7681</td>
+<td class="data row2 col2" id="T_49f6b_row2_col2">0.7162</td>
+<td class="data row2 col3" id="T_49f6b_row2_col3">69.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_e611d_level0_row3">ODS 1: Fin de la pobreza</th>
-<td class="data row3 col0" id="T_e611d_row3_col0">0.8602</td>
-<td class="data row3 col1" id="T_e611d_row3_col1">0.7921</td>
-<td class="data row3 col2" id="T_e611d_row3_col2">0.8247</td>
-<td class="data row3 col3" id="T_e611d_row3_col3">101.0000</td>
+<th class="row_heading level0 row3" id="T_49f6b_level0_row3">ODS 1: Fin de la pobreza</th>
+<td class="data row3 col0" id="T_49f6b_row3_col0">0.8602</td>
+<td class="data row3 col1" id="T_49f6b_row3_col1">0.7921</td>
+<td class="data row3 col2" id="T_49f6b_row3_col2">0.8247</td>
+<td class="data row3 col3" id="T_49f6b_row3_col3">101.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_e611d_level0_row4">ODS 11: Ciudades y comunidades sostenibles</th>
-<td class="data row4 col0" id="T_e611d_row4_col0">0.8226</td>
-<td class="data row4 col1" id="T_e611d_row4_col1">0.8361</td>
-<td class="data row4 col2" id="T_e611d_row4_col2">0.8293</td>
-<td class="data row4 col3" id="T_e611d_row4_col3">122.0000</td>
+<th class="row_heading level0 row4" id="T_49f6b_level0_row4">ODS 11: Ciudades y comunidades sostenibles</th>
+<td class="data row4 col0" id="T_49f6b_row4_col0">0.8226</td>
+<td class="data row4 col1" id="T_49f6b_row4_col1">0.8361</td>
+<td class="data row4 col2" id="T_49f6b_row4_col2">0.8293</td>
+<td class="data row4 col3" id="T_49f6b_row4_col3">122.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_e611d_level0_row5">ODS 2: Hambre cero</th>
-<td class="data row5 col0" id="T_e611d_row5_col0">0.7791</td>
-<td class="data row5 col1" id="T_e611d_row5_col1">0.9054</td>
-<td class="data row5 col2" id="T_e611d_row5_col2">0.8375</td>
-<td class="data row5 col3" id="T_e611d_row5_col3">74.0000</td>
+<th class="row_heading level0 row5" id="T_49f6b_level0_row5">ODS 2: Hambre cero</th>
+<td class="data row5 col0" id="T_49f6b_row5_col0">0.7791</td>
+<td class="data row5 col1" id="T_49f6b_row5_col1">0.9054</td>
+<td class="data row5 col2" id="T_49f6b_row5_col2">0.8375</td>
+<td class="data row5 col3" id="T_49f6b_row5_col3">74.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row6" id="T_e611d_level0_row6">ODS 13: Acción por el clima</th>
-<td class="data row6 col0" id="T_e611d_row6_col0">0.8652</td>
-<td class="data row6 col1" id="T_e611d_row6_col1">0.8280</td>
-<td class="data row6 col2" id="T_e611d_row6_col2">0.8462</td>
-<td class="data row6 col3" id="T_e611d_row6_col3">93.0000</td>
+<th class="row_heading level0 row6" id="T_49f6b_level0_row6">ODS 13: Acción por el clima</th>
+<td class="data row6 col0" id="T_49f6b_row6_col0">0.8652</td>
+<td class="data row6 col1" id="T_49f6b_row6_col1">0.8280</td>
+<td class="data row6 col2" id="T_49f6b_row6_col2">0.8462</td>
+<td class="data row6 col3" id="T_49f6b_row6_col3">93.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row7" id="T_e611d_level0_row7">ODS 12: Producción y consumo responsables</th>
-<td class="data row7 col0" id="T_e611d_row7_col0">0.8462</td>
-<td class="data row7 col1" id="T_e611d_row7_col1">0.8871</td>
-<td class="data row7 col2" id="T_e611d_row7_col2">0.8661</td>
-<td class="data row7 col3" id="T_e611d_row7_col3">62.0000</td>
+<th class="row_heading level0 row7" id="T_49f6b_level0_row7">ODS 12: Producción y consumo responsables</th>
+<td class="data row7 col0" id="T_49f6b_row7_col0">0.8462</td>
+<td class="data row7 col1" id="T_49f6b_row7_col1">0.8871</td>
+<td class="data row7 col2" id="T_49f6b_row7_col2">0.8661</td>
+<td class="data row7 col3" id="T_49f6b_row7_col3">62.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row8" id="T_e611d_level0_row8">ODS 15: Vida de ecosistemas terrestres</th>
-<td class="data row8 col0" id="T_e611d_row8_col0">0.9219</td>
-<td class="data row8 col1" id="T_e611d_row8_col1">0.8939</td>
-<td class="data row8 col2" id="T_e611d_row8_col2">0.9077</td>
-<td class="data row8 col3" id="T_e611d_row8_col3">66.0000</td>
+<th class="row_heading level0 row8" id="T_49f6b_level0_row8">ODS 15: Vida de ecosistemas terrestres</th>
+<td class="data row8 col0" id="T_49f6b_row8_col0">0.9219</td>
+<td class="data row8 col1" id="T_49f6b_row8_col1">0.8939</td>
+<td class="data row8 col2" id="T_49f6b_row8_col2">0.9077</td>
+<td class="data row8 col3" id="T_49f6b_row8_col3">66.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row9" id="T_e611d_level0_row9">ODS 6: Agua limpia y saneamiento</th>
-<td class="data row9 col0" id="T_e611d_row9_col0">0.9394</td>
-<td class="data row9 col1" id="T_e611d_row9_col1">0.8921</td>
-<td class="data row9 col2" id="T_e611d_row9_col2">0.9151</td>
-<td class="data row9 col3" id="T_e611d_row9_col3">139.0000</td>
+<th class="row_heading level0 row9" id="T_49f6b_level0_row9">ODS 6: Agua limpia y saneamiento</th>
+<td class="data row9 col0" id="T_49f6b_row9_col0">0.9394</td>
+<td class="data row9 col1" id="T_49f6b_row9_col1">0.8921</td>
+<td class="data row9 col2" id="T_49f6b_row9_col2">0.9151</td>
+<td class="data row9 col3" id="T_49f6b_row9_col3">139.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row10" id="T_e611d_level0_row10">ODS 3: Salud y bienestar</th>
-<td class="data row10 col0" id="T_e611d_row10_col0">0.9076</td>
-<td class="data row10 col1" id="T_e611d_row10_col1">0.9330</td>
-<td class="data row10 col2" id="T_e611d_row10_col2">0.9201</td>
-<td class="data row10 col3" id="T_e611d_row10_col3">179.0000</td>
+<th class="row_heading level0 row10" id="T_49f6b_level0_row10">ODS 3: Salud y bienestar</th>
+<td class="data row10 col0" id="T_49f6b_row10_col0">0.9076</td>
+<td class="data row10 col1" id="T_49f6b_row10_col1">0.9330</td>
+<td class="data row10 col2" id="T_49f6b_row10_col2">0.9201</td>
+<td class="data row10 col3" id="T_49f6b_row10_col3">179.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row11" id="T_e611d_level0_row11">ODS 14: Vida submarina</th>
-<td class="data row11 col0" id="T_e611d_row11_col0">0.9091</td>
-<td class="data row11 col1" id="T_e611d_row11_col1">0.9333</td>
-<td class="data row11 col2" id="T_e611d_row11_col2">0.9211</td>
-<td class="data row11 col3" id="T_e611d_row11_col3">75.0000</td>
+<th class="row_heading level0 row11" id="T_49f6b_level0_row11">ODS 14: Vida submarina</th>
+<td class="data row11 col0" id="T_49f6b_row11_col0">0.9091</td>
+<td class="data row11 col1" id="T_49f6b_row11_col1">0.9333</td>
+<td class="data row11 col2" id="T_49f6b_row11_col2">0.9211</td>
+<td class="data row11 col3" id="T_49f6b_row11_col3">75.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row12" id="T_e611d_level0_row12">ODS 7: Energía asequible y no contaminante</th>
-<td class="data row12 col0" id="T_e611d_row12_col0">0.9304</td>
-<td class="data row12 col1" id="T_e611d_row12_col1">0.9304</td>
-<td class="data row12 col2" id="T_e611d_row12_col2">0.9304</td>
-<td class="data row12 col3" id="T_e611d_row12_col3">158.0000</td>
+<th class="row_heading level0 row12" id="T_49f6b_level0_row12">ODS 7: Energía asequible y no contaminante</th>
+<td class="data row12 col0" id="T_49f6b_row12_col0">0.9304</td>
+<td class="data row12 col1" id="T_49f6b_row12_col1">0.9304</td>
+<td class="data row12 col2" id="T_49f6b_row12_col2">0.9304</td>
+<td class="data row12 col3" id="T_49f6b_row12_col3">158.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row13" id="T_e611d_level0_row13">ODS 5: Igualdad de género</th>
-<td class="data row13 col0" id="T_e611d_row13_col0">0.9434</td>
-<td class="data row13 col1" id="T_e611d_row13_col1">0.9346</td>
-<td class="data row13 col2" id="T_e611d_row13_col2">0.9390</td>
-<td class="data row13 col3" id="T_e611d_row13_col3">214.0000</td>
+<th class="row_heading level0 row13" id="T_49f6b_level0_row13">ODS 5: Igualdad de género</th>
+<td class="data row13 col0" id="T_49f6b_row13_col0">0.9434</td>
+<td class="data row13 col1" id="T_49f6b_row13_col1">0.9346</td>
+<td class="data row13 col2" id="T_49f6b_row13_col2">0.9390</td>
+<td class="data row13 col3" id="T_49f6b_row13_col3">214.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row14" id="T_e611d_level0_row14">ODS 16: Paz, justicia e instituciones sólidas</th>
-<td class="data row14 col0" id="T_e611d_row14_col0">0.9628</td>
-<td class="data row14 col1" id="T_e611d_row14_col1">0.9583</td>
-<td class="data row14 col2" id="T_e611d_row14_col2">0.9606</td>
-<td class="data row14 col3" id="T_e611d_row14_col3">216.0000</td>
+<th class="row_heading level0 row14" id="T_49f6b_level0_row14">ODS 16: Paz, justicia e instituciones sólidas</th>
+<td class="data row14 col0" id="T_49f6b_row14_col0">0.9628</td>
+<td class="data row14 col1" id="T_49f6b_row14_col1">0.9583</td>
+<td class="data row14 col2" id="T_49f6b_row14_col2">0.9606</td>
+<td class="data row14 col3" id="T_49f6b_row14_col3">216.0000</td>
 </tr>
 <tr>
-<th class="row_heading level0 row15" id="T_e611d_level0_row15">ODS 4: Educación de calidad</th>
-<td class="data row15 col0" id="T_e611d_row15_col0">0.9481</td>
-<td class="data row15 col1" id="T_e611d_row15_col1">0.9805</td>
-<td class="data row15 col2" id="T_e611d_row15_col2">0.9640</td>
-<td class="data row15 col3" id="T_e611d_row15_col3">205.0000</td>
+<th class="row_heading level0 row15" id="T_49f6b_level0_row15">ODS 4: Educación de calidad</th>
+<td class="data row15 col0" id="T_49f6b_row15_col0">0.9481</td>
+<td class="data row15 col1" id="T_49f6b_row15_col1">0.9805</td>
+<td class="data row15 col2" id="T_49f6b_row15_col2">0.9640</td>
+<td class="data row15 col3" id="T_49f6b_row15_col3">205.0000</td>
 </tr>
 </tbody>
 </table>
@@ -10087,7 +10083,7 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="9.-Evidencia-de-predicci%C3%B3n-sobre-textos-del-conjunto-de-prueba">9. Evidencia de predicción sobre textos del conjunto de prueba<a class="anchor-link" href="#9.-Evidencia-de-predicci%C3%B3n-sobre-textos-del-conjunto-de-prueba">¶</a></h2><p>Se seleccionan ocho documentos de clases diversas. Ninguno participó en el ajuste del vectorizador, SVD o clasificador. La “confianza” corresponde a la probabilidad máxima estimada por la regresión logística y debe interpretarse como orientación, no como certeza causal.</p>
+<h2 id="9.-Evidencia-de-predicci%C3%B3n-sobre-textos-del-conjunto-de-prueba">9. Evidencia de predicción sobre textos del conjunto de prueba<a class="anchor-link" href="#9.-Evidencia-de-predicci%C3%B3n-sobre-textos-del-conjunto-de-prueba">¶</a></h2><p>Se seleccionan ocho documentos de clases diversas. Ninguno participó en el ajuste del vectorizador, SVD o clasificador. La “confianza” corresponde a la probabilidad máxima estimada mediante la calibración sigmoidal del LinearSVC y debe interpretarse como orientación, no como certeza causal.</p>
 </div>
 </div>
 </div>
@@ -10141,77 +10137,77 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_d7928_row0_col4, #T_d7928_row1_col4, #T_d7928_row2_col4, #T_d7928_row3_col4, #T_d7928_row4_col4, #T_d7928_row5_col4, #T_d7928_row6_col4, #T_d7928_row7_col4 {
+#T_00f95_row0_col4, #T_00f95_row1_col4, #T_00f95_row2_col4, #T_00f95_row3_col4, #T_00f95_row4_col4, #T_00f95_row5_col4, #T_00f95_row6_col4, #T_00f95_row7_col4 {
   color: #1B7F3A;
   font-weight: bold;
 }
 </style>
-<table id="T_d7928">
+<table id="T_00f95">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_d7928_level0_col0">Texto de prueba</th>
-<th class="col_heading level0 col1" id="T_d7928_level0_col1">ODS verdadero</th>
-<th class="col_heading level0 col2" id="T_d7928_level0_col2">ODS predicho</th>
-<th class="col_heading level0 col3" id="T_d7928_level0_col3">Confianza</th>
-<th class="col_heading level0 col4" id="T_d7928_level0_col4">Resultado</th>
+<th class="col_heading level0 col0" id="T_00f95_level0_col0">Texto de prueba</th>
+<th class="col_heading level0 col1" id="T_00f95_level0_col1">ODS verdadero</th>
+<th class="col_heading level0 col2" id="T_00f95_level0_col2">ODS predicho</th>
+<th class="col_heading level0 col3" id="T_00f95_level0_col3">Confianza</th>
+<th class="col_heading level0 col4" id="T_00f95_level0_col4">Resultado</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_d7928_row0_col0">En la mayoría de los países, los niños tenían más probabilidades de ser pobres que la población en general. Solo en Dinamarca, Finlandia y Estonia las tasas de pobreza infantil fueron considerablemente más bajas que las tasas de pobreza total (alrededor de 2 puntos porcentuales). Mientras tanto, en Hungría,…</td>
-<td class="data row0 col1" id="T_d7928_row0_col1">1 — Fin de la pobreza</td>
-<td class="data row0 col2" id="T_d7928_row0_col2">1 — Fin de la pobreza</td>
-<td class="data row0 col3" id="T_d7928_row0_col3">95.2%</td>
-<td class="data row0 col4" id="T_d7928_row0_col4">Correcto</td>
+<td class="data row0 col0" id="T_00f95_row0_col0">En la mayoría de los países, los niños tenían más probabilidades de ser pobres que la población en general. Solo en Dinamarca, Finlandia y Estonia las tasas de pobreza infantil fueron considerablemente más bajas que las tasas de pobreza total (alrededor de 2 puntos porcentuales). Mientras tanto, en Hungría,…</td>
+<td class="data row0 col1" id="T_00f95_row0_col1">1 — Fin de la pobreza</td>
+<td class="data row0 col2" id="T_00f95_row0_col2">1 — Fin de la pobreza</td>
+<td class="data row0 col3" id="T_00f95_row0_col3">95.2%</td>
+<td class="data row0 col4" id="T_00f95_row0_col4">Correcto</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_d7928_row1_col0">La atención primaria incluye una amplia gama de actividades curativas, preventivas y de promoción de la salud. La distinción entre APS y otros servicios ambulatorios (p. ej., consulta y diagnóstico) no es clara. Esto da como resultado que se utilicen varios términos para el mismo servicio (Oxford Policy Management,…</td>
-<td class="data row1 col1" id="T_d7928_row1_col1">3 — Salud y bienestar</td>
-<td class="data row1 col2" id="T_d7928_row1_col2">3 — Salud y bienestar</td>
-<td class="data row1 col3" id="T_d7928_row1_col3">93.0%</td>
-<td class="data row1 col4" id="T_d7928_row1_col4">Correcto</td>
+<td class="data row1 col0" id="T_00f95_row1_col0">La atención primaria incluye una amplia gama de actividades curativas, preventivas y de promoción de la salud. La distinción entre APS y otros servicios ambulatorios (p. ej., consulta y diagnóstico) no es clara. Esto da como resultado que se utilicen varios términos para el mismo servicio (Oxford Policy Management,…</td>
+<td class="data row1 col1" id="T_00f95_row1_col1">3 — Salud y bienestar</td>
+<td class="data row1 col2" id="T_00f95_row1_col2">3 — Salud y bienestar</td>
+<td class="data row1 col3" id="T_00f95_row1_col3">93.0%</td>
+<td class="data row1 col4" id="T_00f95_row1_col4">Correcto</td>
 </tr>
 <tr>
-<td class="data row2 col0" id="T_d7928_row2_col0">Luego llegamos a cómo los altos niveles de educación han afectado el crecimiento en Kerala, antes de concluir con algunas preocupaciones sobre la calidad de la educación en el estado. La escolarización en Rajasthan es un fenómeno relativamente reciente. Existen enormes desafíos relacionados con el acceso y la calidad…</td>
-<td class="data row2 col1" id="T_d7928_row2_col1">4 — Educación de calidad</td>
-<td class="data row2 col2" id="T_d7928_row2_col2">4 — Educación de calidad</td>
-<td class="data row2 col3" id="T_d7928_row2_col3">81.8%</td>
-<td class="data row2 col4" id="T_d7928_row2_col4">Correcto</td>
+<td class="data row2 col0" id="T_00f95_row2_col0">Luego llegamos a cómo los altos niveles de educación han afectado el crecimiento en Kerala, antes de concluir con algunas preocupaciones sobre la calidad de la educación en el estado. La escolarización en Rajasthan es un fenómeno relativamente reciente. Existen enormes desafíos relacionados con el acceso y la calidad…</td>
+<td class="data row2 col1" id="T_00f95_row2_col1">4 — Educación de calidad</td>
+<td class="data row2 col2" id="T_00f95_row2_col2">4 — Educación de calidad</td>
+<td class="data row2 col3" id="T_00f95_row2_col3">81.8%</td>
+<td class="data row2 col4" id="T_00f95_row2_col4">Correcto</td>
 </tr>
 <tr>
-<td class="data row3 col0" id="T_d7928_row3_col0">Aunque los altos cargos dirigen muchas unidades de género, a algunas no se les asignan presupuestos lo bastante amplios como para funcionar según lo previsto. Tampoco los departamentos gubernamentales les asignan los mismos mandatos, autoridad o funciones. Sin embargo, México está intensificando sus esfuerzos para…</td>
-<td class="data row3 col1" id="T_d7928_row3_col1">5 — Igualdad de género</td>
-<td class="data row3 col2" id="T_d7928_row3_col2">5 — Igualdad de género</td>
-<td class="data row3 col3" id="T_d7928_row3_col3">93.7%</td>
-<td class="data row3 col4" id="T_d7928_row3_col4">Correcto</td>
+<td class="data row3 col0" id="T_00f95_row3_col0">Aunque los altos cargos dirigen muchas unidades de género, a algunas no se les asignan presupuestos lo bastante amplios como para funcionar según lo previsto. Tampoco los departamentos gubernamentales les asignan los mismos mandatos, autoridad o funciones. Sin embargo, México está intensificando sus esfuerzos para…</td>
+<td class="data row3 col1" id="T_00f95_row3_col1">5 — Igualdad de género</td>
+<td class="data row3 col2" id="T_00f95_row3_col2">5 — Igualdad de género</td>
+<td class="data row3 col3" id="T_00f95_row3_col3">93.7%</td>
+<td class="data row3 col4" id="T_00f95_row3_col4">Correcto</td>
 </tr>
 <tr>
-<td class="data row4 col0" id="T_d7928_row4_col0">En el área metropolitana, el suministro de agua en red alcanzó el 100%, aunque la red de alcantarillado no está completa (Regione del Veneto, 2008c). Aunque es probable que los esfuerzos recientes hayan reducido esta tasa, aún se necesitan mejoras. En cierta medida, esto refleja problemas genéricos que afectan al…</td>
-<td class="data row4 col1" id="T_d7928_row4_col1">6 — Agua limpia y saneamiento</td>
-<td class="data row4 col2" id="T_d7928_row4_col2">6 — Agua limpia y saneamiento</td>
-<td class="data row4 col3" id="T_d7928_row4_col3">88.5%</td>
-<td class="data row4 col4" id="T_d7928_row4_col4">Correcto</td>
+<td class="data row4 col0" id="T_00f95_row4_col0">En el área metropolitana, el suministro de agua en red alcanzó el 100%, aunque la red de alcantarillado no está completa (Regione del Veneto, 2008c). Aunque es probable que los esfuerzos recientes hayan reducido esta tasa, aún se necesitan mejoras. En cierta medida, esto refleja problemas genéricos que afectan al…</td>
+<td class="data row4 col1" id="T_00f95_row4_col1">6 — Agua limpia y saneamiento</td>
+<td class="data row4 col2" id="T_00f95_row4_col2">6 — Agua limpia y saneamiento</td>
+<td class="data row4 col3" id="T_00f95_row4_col3">88.5%</td>
+<td class="data row4 col4" id="T_00f95_row4_col4">Correcto</td>
 </tr>
 <tr>
-<td class="data row5 col0" id="T_d7928_row5_col0">Hay considerables recursos de energía eólica, mareomotriz, oceánica, térmica y undimotriz disponibles en algunos países de la CEDEAO. La región también tiene un gran potencial de energía solar con promedios de radiación muy altos de 5 a 6 kWh/m2 durante todo el año. La proporción de nuevas energías renovables como la…</td>
-<td class="data row5 col1" id="T_d7928_row5_col1">7 — Energía asequible y no contaminante</td>
-<td class="data row5 col2" id="T_d7928_row5_col2">7 — Energía asequible y no contaminante</td>
-<td class="data row5 col3" id="T_d7928_row5_col3">96.1%</td>
-<td class="data row5 col4" id="T_d7928_row5_col4">Correcto</td>
+<td class="data row5 col0" id="T_00f95_row5_col0">Hay considerables recursos de energía eólica, mareomotriz, oceánica, térmica y undimotriz disponibles en algunos países de la CEDEAO. La región también tiene un gran potencial de energía solar con promedios de radiación muy altos de 5 a 6 kWh/m2 durante todo el año. La proporción de nuevas energías renovables como la…</td>
+<td class="data row5 col1" id="T_00f95_row5_col1">7 — Energía asequible y no contaminante</td>
+<td class="data row5 col2" id="T_00f95_row5_col2">7 — Energía asequible y no contaminante</td>
+<td class="data row5 col3" id="T_00f95_row5_col3">96.1%</td>
+<td class="data row5 col4" id="T_00f95_row5_col4">Correcto</td>
 </tr>
 <tr>
-<td class="data row6 col0" id="T_d7928_row6_col0">Cuando este documento se refiera a "países" o "gobiernos", también pretende incluir "organizaciones económicas regionales", si corresponde. Los autores desean agradecer a los siguientes colegas de la OCDE y la IEA por sus útiles comentarios sobre este documento: Simon Buckle, Jane Ellis, Takashi Hattori, Christina…</td>
-<td class="data row6 col1" id="T_d7928_row6_col1">13 — Acción por el clima</td>
-<td class="data row6 col2" id="T_d7928_row6_col2">13 — Acción por el clima</td>
-<td class="data row6 col3" id="T_d7928_row6_col3">93.9%</td>
-<td class="data row6 col4" id="T_d7928_row6_col4">Correcto</td>
+<td class="data row6 col0" id="T_00f95_row6_col0">Cuando este documento se refiera a "países" o "gobiernos", también pretende incluir "organizaciones económicas regionales", si corresponde. Los autores desean agradecer a los siguientes colegas de la OCDE y la IEA por sus útiles comentarios sobre este documento: Simon Buckle, Jane Ellis, Takashi Hattori, Christina…</td>
+<td class="data row6 col1" id="T_00f95_row6_col1">13 — Acción por el clima</td>
+<td class="data row6 col2" id="T_00f95_row6_col2">13 — Acción por el clima</td>
+<td class="data row6 col3" id="T_00f95_row6_col3">93.9%</td>
+<td class="data row6 col4" id="T_00f95_row6_col4">Correcto</td>
 </tr>
 <tr>
-<td class="data row7 col0" id="T_d7928_row7_col0">Aunque en las últimas dos décadas ha surgido una próspera literatura de ciencias sociales sobre ciudadanía, hasta la fecha no existe ni una sociología de los derechos ni una sociología de los derechos humanos. Los obstáculos teóricos incluyen la asociación de los derechos con el discurso filosófico de la normatividad,…</td>
-<td class="data row7 col1" id="T_d7928_row7_col1">16 — Paz, justicia e instituciones sólidas</td>
-<td class="data row7 col2" id="T_d7928_row7_col2">16 — Paz, justicia e instituciones sólidas</td>
-<td class="data row7 col3" id="T_d7928_row7_col3">94.7%</td>
-<td class="data row7 col4" id="T_d7928_row7_col4">Correcto</td>
+<td class="data row7 col0" id="T_00f95_row7_col0">Aunque en las últimas dos décadas ha surgido una próspera literatura de ciencias sociales sobre ciudadanía, hasta la fecha no existe ni una sociología de los derechos ni una sociología de los derechos humanos. Los obstáculos teóricos incluyen la asociación de los derechos con el discurso filosófico de la normatividad,…</td>
+<td class="data row7 col1" id="T_00f95_row7_col1">16 — Paz, justicia e instituciones sólidas</td>
+<td class="data row7 col2" id="T_00f95_row7_col2">16 — Paz, justicia e instituciones sólidas</td>
+<td class="data row7 col3" id="T_00f95_row7_col3">94.7%</td>
+<td class="data row7 col4" id="T_00f95_row7_col4">Correcto</td>
 </tr>
 </tbody>
 </table>
@@ -10273,7 +10269,7 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
     <span class="n">final_model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">sample_texts</span><span class="p">),</span>
 <span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Artefacto guardado: </span><span class="si">{</span><span class="n">MODEL_PATH</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Artefacto guardado: </span><span class="si">{</span><span class="n">MODEL_PATH</span><span class="o">.</span><span class="n">as_posix</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tamaño: </span><span class="si">{</span><span class="n">MODEL_PATH</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_size</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mi">1024</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> MB"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Verificación: etiquetas y probabilidades son idénticas después de recargar."</span><span class="p">)</span>
 </pre></div>
@@ -10288,7 +10284,7 @@ Clases soportadas: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Artefacto guardado: /Users/alejandroocamporojas/Desktop/Maestria/Segundo_Semestre/MLNS/Microproyecto2/deploy_streamlit/resources/models/modelo_ods.joblib
+<pre>Artefacto guardado: deploy_streamlit/resources/models/modelo_ods.joblib
 Tamaño: 66.27 MB
 Verificación: etiquetas y probabilidades son idénticas después de recargar.
 </pre>
@@ -10331,8 +10327,9 @@ Verificación: etiquetas y probabilidades son idénticas después de recargar.
 <span class="s1">1. Bajo un protocolo idéntico, el mejor LinearSVC obtuvo F1 macro de validación **</span><span class="si">{</span><span class="n">svc_cv</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">**, frente a **</span><span class="si">{</span><span class="n">lr_cv</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">** de la mejor regresión logística. La diferencia es pequeña, pero LinearSVC también presentó una brecha entrenamiento–validación menor en su configuración ganadora.</span>
 <span class="s1">2. La búsqueda seleccionó **</span><span class="si">{</span><span class="n">best_classifier</span><span class="si">}</span><span class="s1">**, **</span><span class="si">{</span><span class="n">best_scaler</span><span class="si">}</span><span class="s1">**, **</span><span class="si">{</span><span class="n">best_components</span><span class="si">}</span><span class="s1"> componentes SVD**, `C=</span><span class="si">{</span><span class="n">best_c</span><span class="si">}</span><span class="s1">` y `class_weight=</span><span class="si">{</span><span class="n">best_weight</span><span class="si">}</span><span class="s1">`.</span>
 <span class="s1">3. Después de calibración sigmoidal, el modelo alcanzó accuracy de **</span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">'Accuracy'</span><span class="p">]</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">**, balanced accuracy de **</span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">'Balanced accuracy'</span><span class="p">]</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">** y F1 macro de **</span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">'F1 macro'</span><span class="p">]</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">** sobre </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="si">:</span><span class="s1">,</span><span class="si">}</span><span class="s1"> textos nunca utilizados en el aprendizaje.</span>
-<span class="s1">4. LSA recuperó estructuras coherentes con educación, género, derechos, salud, agua, energía, clima y producción/consumo. Los solapamientos confirman la naturaleza transversal de los ODS.</span>
-<span class="s1">5. La calibración permite que Streamlit muestre probabilidades estimadas; estas expresan incertidumbre del modelo, no certeza causal.</span>
+<span class="s1">4. La diferencia entre accuracy y F1 macro confirma que el buen desempeño agregado no es uniforme: los ODS 8, 10 y 9 siguen siendo los retos principales y requieren revisión humana en aplicaciones de alto impacto.</span>
+<span class="s1">5. LSA recuperó estructuras coherentes con educación, género, derechos, salud, agua, energía, clima y producción/consumo. Los solapamientos confirman la naturaleza transversal de los ODS.</span>
+<span class="s1">6. La calibración permite que Streamlit muestre probabilidades estimadas; estas expresan incertidumbre del modelo, no certeza causal.</span>
 
 <span class="s1">### Limitaciones y uso responsable</span>
 
@@ -10358,6 +10355,7 @@ Verificación: etiquetas y probabilidades son idénticas después de recargar.
 <li>Bajo un protocolo idéntico, el mejor LinearSVC obtuvo F1 macro de validación <strong>0.846</strong>, frente a <strong>0.844</strong> de la mejor regresión logística. La diferencia es pequeña, pero LinearSVC también presentó una brecha entrenamiento–validación menor en su configuración ganadora.</li>
 <li>La búsqueda seleccionó <strong>LinearSVC</strong>, <strong>StandardScaler</strong>, <strong>300 componentes SVD</strong>, <code>C=0.001</code> y <code>class_weight=balanced</code>.</li>
 <li>Después de calibración sigmoidal, el modelo alcanzó accuracy de <strong>0.882</strong>, balanced accuracy de <strong>0.854</strong> y F1 macro de <strong>0.853</strong> sobre 1,932 textos nunca utilizados en el aprendizaje.</li>
+<li>La diferencia entre accuracy y F1 macro confirma que el buen desempeño agregado no es uniforme: los ODS 8, 10 y 9 siguen siendo los retos principales y requieren revisión humana en aplicaciones de alto impacto.</li>
 <li>LSA recuperó estructuras coherentes con educación, género, derechos, salud, agua, energía, clima y producción/consumo. Los solapamientos confirman la naturaleza transversal de los ODS.</li>
 <li>La calibración permite que Streamlit muestre probabilidades estimadas; estas expresan incertidumbre del modelo, no certeza causal.</li>
 </ol>
@@ -10391,6 +10389,7 @@ Verificación: etiquetas y probabilidades son idénticas después de recargar.
 <li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Evaluación multiclase sobre un test reservado.</li>
 <li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Ocho clasificaciones visibles de textos no usados en aprendizaje.</li>
 <li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Pipeline completo persistido con Joblib para Streamlit.</li>
+<li class="task-list-item"><input checked="" class="task-list-item-checkbox" disabled="" type="checkbox"/>Aplicación funcional y pública en <a href="https://microproyecto2-gcrwplkaefh7lt9c7sbryd.streamlit.app">Streamlit Community Cloud</a>.</li>
 </ul>
 <h3 id="Referencias">Referencias<a class="anchor-link" href="#Referencias">¶</a></h3><ul>
 <li>Naciones Unidas. <a href="https://sdgs.un.org/goals">Objetivos de Desarrollo Sostenible</a>.</li>

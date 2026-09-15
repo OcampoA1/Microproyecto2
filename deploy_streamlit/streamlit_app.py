@@ -63,7 +63,8 @@ with predict_tab:
         else:
             left, right = st.columns([1, 2])
             left.metric("ODS predicho", f"ODS {prediction.ods}")
-            right.metric("Objetivo", prediction.name)
+            right.markdown("**Objetivo**")
+            right.markdown(f"### {prediction.name}")
             st.progress(
                 prediction.probability,
                 text=f"Probabilidad calibrada: {prediction.probability:.1%}",
@@ -117,3 +118,18 @@ with about_tab:
         - Textos muy diferentes del corpus de entrenamiento pueden ser menos fiables.
         """
     )
+
+    st.subheader("Información académica")
+    st.markdown(
+        """
+        - **Autores:** Alejandro Ocampo Rojas y Mateo Alvarez Lopera
+        - **Institución:** Universidad de los Andes
+        - **Asignatura:** Machine Learning No Supervisado
+        """
+    )
+
+st.divider()
+st.caption(
+    "Microproyecto 2 · Universidad de los Andes · "
+    "Alejandro Ocampo Rojas y Mateo Alvarez Lopera"
+)
